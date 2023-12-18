@@ -35,6 +35,33 @@ async function initModel() {
     console.log("Model loaded");
 }
 
+function formatText(text) {
+    let newSentence = true;
+    let formattedText = '';
+
+    for (let char of text) {
+        if (newSentence && char.match(/[a-z]/i)) {
+            // Mettre le caractère en majuscule s'il débute une nouvelle phrase
+            formattedText += char.toUpperCase();
+            newSentence = false;
+        } else if (char === '.') {
+            // Si le caractère est un point, la prochaine lettre doit être en majuscule
+            formattedText += char;
+            newSentence = true;
+        } else {
+            // Pour les 'i' isolés, les convertir en majuscules
+            if (char === 'i' && (formattedText.endsWith(' ') || formattedText === '')) {
+                formattedText += 'I';
+            } else {
+                formattedText += char;
+            }
+        }
+    }
+
+    return formattedText;
+}
+
+
 // Function to replace placeholders with character names
 function replacePlaceholders(text, char1, char2) {
     return text.replace(/\{1\}/g, `<span class="char1">${char1}</span>`)
@@ -157,7 +184,10 @@ async function displayGeneratedText() {
 
         const nextChar = itos[nextCharId]; // Decode the next character
         displayedText += nextChar; // Append the next character to the displayed text
+        displayedText = formatText(displayedText); // Appliquer la mise en forme
         const formattedText = replacePlaceholders(displayedText, character1Input.value, character2Input.value).replace(/\n/g, '<br>');
+        
+
         dialogueOutput.innerHTML = formattedText;
     }
 
