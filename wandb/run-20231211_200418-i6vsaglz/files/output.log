@@ -1,0 +1,8 @@
+
+Vocab size : 53
+Traceback (most recent call last):
+  File "train.py", line 215, in <module>
+    model = LLM(LLM_config).to(device)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/model_V2.py", line 158, in __init__
+    self.device = config.device
+AttributeError: 'Config' object has no attribute 'device'

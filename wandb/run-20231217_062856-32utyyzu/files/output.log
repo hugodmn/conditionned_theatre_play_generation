@@ -1,0 +1,34 @@
+Vocab size : 53
+---------------------Starting training---------------------
+964
+871
+565
+773
+655
+662
+805
+671
+579
+862
+505
+  0%|                                                                                                             | 0/292 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/train.py", line 253, in <module>
+    step(model, optimizer, scheduler, train_loader, test_dataset, device, epoch, path, best_loss = 1000)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/train.py", line 37, in step
+    for idx, (context,targets) in enumerate(train_loader):
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 674, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/dataset.py", line 54, in __getitem__
+    start_index = random.randint(0, len(dialogue) - self.ctx_len - 1)
+  File "/Users/hugo/.pyenv/versions/3.8.18/lib/python3.8/random.py", line 248, in randint
+    return self.randrange(a, b+1)
+  File "/Users/hugo/.pyenv/versions/3.8.18/lib/python3.8/random.py", line 226, in randrange
+    raise ValueError("empty range for randrange() (%d, %d, %d)" % (istart, istop, width))
+ValueError: empty range for randrange() (0, -7, -7)

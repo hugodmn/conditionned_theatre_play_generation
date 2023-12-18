@@ -1,0 +1,32 @@
+
+  0%|                                                                                                                                                                                       | 0/695 [00:00<?, ?it/s]
+Vocab size : 53
+  0%|                                                                                                                                                                                       | 0/695 [00:14<?, ?it/s]
+Traceback (most recent call last):
+  File "train.py", line 253, in <module>
+    step(model, optimizer, scheduler, train_loader, test_dataset, device, epoch, path, best_loss = 1000)
+  File "train.py", line 37, in step
+    for idx, (context,targets) in enumerate(train_loader):
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1345, in _next_data
+    return self._process_data(data)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/_utils.py", line 694, in reraise
+    raise exception
+ValueError: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/dataset.py", line 53, in __getitem__
+    start_index = random.randint(0, len(dialogue) - self.ctx_len - 1)
+  File "/Users/hugo/.pyenv/versions/3.8.18/lib/python3.8/random.py", line 248, in randint
+    return self.randrange(a, b+1)
+  File "/Users/hugo/.pyenv/versions/3.8.18/lib/python3.8/random.py", line 226, in randrange
+    raise ValueError("empty range for randrange() (%d, %d, %d)" % (istart, istop, width))
+ValueError: empty range for randrange() (0, -265, -265)

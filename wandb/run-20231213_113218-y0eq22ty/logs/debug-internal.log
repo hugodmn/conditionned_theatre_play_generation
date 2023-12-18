@@ -1,0 +1,21 @@
+2023-12-13 11:32:18,123 INFO    StreamThr :67782 [internal.py:wandb_internal():86] W&B internal server running at pid: 67782, started at: 2023-12-13 11:32:18.122240
+2023-12-13 11:32:18,124 DEBUG   HandlerThread:67782 [handler.py:handle_request():146] handle_request: status
+2023-12-13 11:32:18,127 INFO    WriterThread:67782 [datastore.py:open_for_write():85] open: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_113218-y0eq22ty/run-y0eq22ty.wandb
+2023-12-13 11:32:18,128 DEBUG   SenderThread:67782 [sender.py:send():382] send: header
+2023-12-13 11:32:18,130 DEBUG   SenderThread:67782 [sender.py:send():382] send: run
+2023-12-13 11:32:18,620 INFO    SenderThread:67782 [dir_watcher.py:__init__():211] watching files in: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_113218-y0eq22ty/files
+2023-12-13 11:32:18,620 INFO    SenderThread:67782 [sender.py:_start_run_threads():1136] run started: y0eq22ty with start time 1702463538.122459
+2023-12-13 11:32:18,637 DEBUG   HandlerThread:67782 [handler.py:handle_request():146] handle_request: check_version
+2023-12-13 11:32:18,637 DEBUG   SenderThread:67782 [sender.py:send_request():409] send_request: check_version
+2023-12-13 11:32:18,699 DEBUG   HandlerThread:67782 [handler.py:handle_request():146] handle_request: shutdown
+2023-12-13 11:32:18,700 INFO    HandlerThread:67782 [handler.py:finish():866] shutting down handler
+2023-12-13 11:32:18,754 INFO    SenderThread:67782 [sender.py:finish():1548] shutting down sender
+2023-12-13 11:32:18,754 INFO    SenderThread:67782 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-12-13 11:32:19,625 INFO    SenderThread:67782 [dir_watcher.py:finish():388] scan: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_113218-y0eq22ty/files
+2023-12-13 11:32:19,625 INFO    SenderThread:67782 [dir_watcher.py:finish():402] scan save: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_113218-y0eq22ty/files/config.yaml config.yaml
+2023-12-13 11:32:19,625 INFO    SenderThread:67782 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-13 11:32:19,625 INFO    SenderThread:67782 [file_pusher.py:join():181] waiting for file pusher
+2023-12-13 11:32:19,642 INFO    WriterThread:67782 [datastore.py:close():294] close: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_113218-y0eq22ty/run-y0eq22ty.wandb
+2023-12-13 11:32:20,266 INFO    wandb-upload_0:67782 [upload_job.py:push():131] Uploaded file /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_113218-y0eq22ty/files/config.yaml
+2023-12-13 11:32:20,637 INFO    SenderThread:67782 [file_stream.py:finish():595] file stream finish called
+2023-12-13 11:32:20,918 INFO    SenderThread:67782 [file_stream.py:finish():599] file stream finish is done

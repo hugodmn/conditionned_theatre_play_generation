@@ -1,0 +1,27 @@
+Vocab size : 53
+---------------------Starting training---------------------
+  0%|                                                                                                                                                                                      | 0/3496 [00:07<?, ?it/s]
+Traceback (most recent call last):
+  File "train.py", line 234, in <module>
+    step(model, optimizer, scheduler, train_loader, test_dataset, device, epoch, path, best_loss = 1000)
+  File "train.py", line 37, in step
+    for idx, (context,targets) in enumerate(train_loader):
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 438, in __iter__
+    return self._get_iterator()
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 386, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1039, in __init__
+    w.start()
+  File "/Users/hugo/.pyenv/versions/3.8.18/lib/python3.8/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+  File "/Users/hugo/.pyenv/versions/3.8.18/lib/python3.8/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "/Users/hugo/.pyenv/versions/3.8.18/lib/python3.8/multiprocessing/context.py", line 284, in _Popen
+    return Popen(process_obj)
+  File "/Users/hugo/.pyenv/versions/3.8.18/lib/python3.8/multiprocessing/popen_spawn_posix.py", line 32, in __init__
+    super().__init__(process_obj)
+  File "/Users/hugo/.pyenv/versions/3.8.18/lib/python3.8/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/Users/hugo/.pyenv/versions/3.8.18/lib/python3.8/multiprocessing/popen_spawn_posix.py", line 62, in _launch
+    f.write(fp.getbuffer())
+KeyboardInterrupt

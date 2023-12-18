@@ -1,0 +1,41 @@
+Vocab size : 53
+---------------------Starting training---------------------
+  0%|                                                                                                                                                                                     | 0/11895 [00:09<?, ?it/s]
+Traceback (most recent call last):
+  File "train.py", line 223, in <module>
+    step(model, optimizer, scheduler, train_loader, test_dataset, device, epoch, path, best_loss = 1000)
+  File "train.py", line 40, in step
+    logits = model(context)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/model_V2.py", line 184, in forward
+    out = self.blocks(out)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/model_V2.py", line 135, in forward
+    out = self.MHA(out)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/model_V2.py", line 111, in forward
+    out = torch.cat([head(x) for head in self.heads], dim=-1)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/model_V2.py", line 111, in <listcomp>
+    out = torch.cat([head(x) for head in self.heads], dim=-1)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/model_V2.py", line 88, in forward
+    wei = wei.masked_fill(self.tril[:T, :T] == 0, float('-inf'))
+RuntimeError: The size of tensor a (256) must match the size of tensor b (512) at non-singleton dimension 2

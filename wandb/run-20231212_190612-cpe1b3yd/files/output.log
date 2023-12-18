@@ -1,0 +1,12 @@
+
+Vocab size : 53
+Traceback (most recent call last):
+  File "train.py", line 225, in <module>
+    model.load_state_dict(torch.load("checkpoints/best_model.pt"))
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/serialization.py", line 986, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/serialization.py", line 435, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/serialization.py", line 416, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'checkpoints/best_model.pt'

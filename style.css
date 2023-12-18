@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#dialogueOutput {
+    margin-top: 20px;
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 10px;
+    min-height: 100px;
+}
+
+.char1 {
+    color: blue; /* Change to your preferred color for character 1 */
+}
+
+.char2 {
+    color: red; /* Change to your preferred color for character 2 */
+}
+
+h2 {
+    text-align: center;
+    color: #333; /* Title color */
+}

@@ -1,0 +1,575 @@
+2023-12-13 01:08:55,589 INFO    StreamThr :78421 [internal.py:wandb_internal():86] W&B internal server running at pid: 78421, started at: 2023-12-13 01:08:55.586370
+2023-12-13 01:08:55,591 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status
+2023-12-13 01:08:55,596 INFO    WriterThread:78421 [datastore.py:open_for_write():85] open: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/run-zni3e3o2.wandb
+2023-12-13 01:08:55,597 DEBUG   SenderThread:78421 [sender.py:send():382] send: header
+2023-12-13 01:08:55,600 DEBUG   SenderThread:78421 [sender.py:send():382] send: run
+2023-12-13 01:08:56,022 INFO    SenderThread:78421 [dir_watcher.py:__init__():211] watching files in: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files
+2023-12-13 01:08:56,022 INFO    SenderThread:78421 [sender.py:_start_run_threads():1136] run started: zni3e3o2 with start time 1702426135.586853
+2023-12-13 01:08:56,043 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: check_version
+2023-12-13 01:08:56,044 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: check_version
+2023-12-13 01:08:56,103 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: run_start
+2023-12-13 01:08:56,105 DEBUG   HandlerThread:78421 [system_info.py:__init__():32] System info init
+2023-12-13 01:08:56,105 DEBUG   HandlerThread:78421 [system_info.py:__init__():47] System info init done
+2023-12-13 01:08:56,105 INFO    HandlerThread:78421 [system_monitor.py:start():194] Starting system monitor
+2023-12-13 01:08:56,105 INFO    SystemMonitor:78421 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-12-13 01:08:56,105 INFO    HandlerThread:78421 [system_monitor.py:probe():214] Collecting system info
+2023-12-13 01:08:56,105 INFO    SystemMonitor:78421 [interfaces.py:start():190] Started cpu monitoring
+2023-12-13 01:08:56,106 DEBUG   HandlerThread:78421 [system_info.py:probe():196] Probing system
+2023-12-13 01:08:56,123 INFO    SystemMonitor:78421 [interfaces.py:start():190] Started disk monitoring
+2023-12-13 01:08:56,136 INFO    SystemMonitor:78421 [interfaces.py:start():190] Started memory monitoring
+2023-12-13 01:08:56,138 INFO    SystemMonitor:78421 [interfaces.py:start():190] Started network monitoring
+2023-12-13 01:08:56,163 DEBUG   HandlerThread:78421 [system_info.py:_probe_git():181] Probing git
+2023-12-13 01:08:56,192 DEBUG   HandlerThread:78421 [system_info.py:_probe_git():189] Probing git done
+2023-12-13 01:08:56,192 DEBUG   HandlerThread:78421 [system_info.py:probe():244] Probing system done
+2023-12-13 01:08:56,192 DEBUG   HandlerThread:78421 [system_monitor.py:probe():223] {'os': 'macOS-13.3-x86_64-i386-64bit', 'python': '3.8.18', 'heartbeatAt': '2023-12-13T00:08:56.106468', 'startedAt': '2023-12-13T00:08:55.572576', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/hugodmn/conditionned_theatre_play_generation.git', 'commit': None}, 'email': 'hugo.daumain@edu.devinci.fr', 'root': '/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation', 'host': 'macbook-pro.home', 'username': 'hugo', 'executable': '/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/bin/python', 'cpu_count': 12, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2400, 'min': 2400, 'max': 2400}, 'cpu_freq_per_core': [{'current': 2400, 'min': 2400, 'max': 2400}], 'disk': {'/': {'total': 926.3517189025879, 'used': 8.455913543701172}}, 'memory': {'total': 32.0}}
+2023-12-13 01:08:56,193 INFO    HandlerThread:78421 [system_monitor.py:probe():224] Finished collecting system info
+2023-12-13 01:08:56,193 INFO    HandlerThread:78421 [system_monitor.py:probe():227] Publishing system info
+2023-12-13 01:08:56,193 DEBUG   HandlerThread:78421 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-12-13 01:08:56,193 DEBUG   HandlerThread:78421 [system_info.py:_save_pip():68] Saving pip packages done
+2023-12-13 01:08:56,194 INFO    HandlerThread:78421 [system_monitor.py:probe():229] Finished publishing system info
+2023-12-13 01:08:56,197 DEBUG   SenderThread:78421 [sender.py:send():382] send: files
+2023-12-13 01:08:56,197 INFO    SenderThread:78421 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2023-12-13 01:08:56,202 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-13 01:08:56,202 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-13 01:08:56,203 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: stop_status
+2023-12-13 01:08:56,369 DEBUG   SenderThread:78421 [sender.py:send():382] send: telemetry
+2023-12-13 01:08:56,728 INFO    wandb-upload_0:78421 [upload_job.py:push():131] Uploaded file /var/folders/3t/6vk3vg696px0cpvl0hqnmnc40000gn/T/tmpfagdhmuuwandb/jkizcpm8-wandb-metadata.json
+2023-12-13 01:08:57,028 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/requirements.txt
+2023-12-13 01:08:57,028 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/wandb-metadata.json
+2023-12-13 01:08:57,028 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:08:59,037 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:01,599 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:09:06,622 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:09:11,207 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-13 01:09:11,207 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-13 01:09:11,207 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: stop_status
+2023-12-13 01:09:12,556 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:09:15,119 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:17,127 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:17,600 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:09:19,133 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:21,141 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:22,619 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:09:23,152 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:25,163 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:26,211 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-13 01:09:26,212 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-13 01:09:26,212 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: stop_status
+2023-12-13 01:09:27,173 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:27,714 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:09:28,174 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/config.yaml
+2023-12-13 01:09:29,179 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:31,185 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:33,146 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:09:33,193 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:35,203 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:36,856 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:09:37,214 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:38,425 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:09:38,835 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:09:39,224 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:40,888 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:09:41,217 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-13 01:09:41,217 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-13 01:09:41,217 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: stop_status
+2023-12-13 01:09:41,235 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:42,926 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:09:43,245 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:43,562 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:09:44,890 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:09:45,256 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:46,895 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:09:47,266 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:48,669 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:09:48,909 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:09:49,277 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:50,954 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:09:51,287 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:52,999 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:09:53,298 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:53,828 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:09:54,931 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:09:55,308 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:56,139 DEBUG   SystemMonitor:78421 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-12-13 01:09:56,140 DEBUG   SenderThread:78421 [sender.py:send():382] send: stats
+2023-12-13 01:09:56,221 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-13 01:09:56,222 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-13 01:09:56,222 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: stop_status
+2023-12-13 01:09:57,319 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:09:59,013 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:09:59,329 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:01,340 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:03,350 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:04,200 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:10:04,946 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:10:05,360 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:07,366 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:09,376 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:09,465 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:10:11,226 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-13 01:10:11,226 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-13 01:10:11,227 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: stop_status
+2023-12-13 01:10:11,387 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:13,398 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:14,596 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:10:14,968 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:10:15,408 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:17,418 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:19,429 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:19,685 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:10:21,434 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:23,445 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:24,909 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:10:24,991 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:10:25,455 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:26,142 DEBUG   SenderThread:78421 [sender.py:send():382] send: stats
+2023-12-13 01:10:26,231 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-13 01:10:26,232 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-13 01:10:26,232 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: stop_status
+2023-12-13 01:10:27,466 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:29,476 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:30,096 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:10:31,486 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:33,494 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:35,049 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:10:35,258 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:10:35,505 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:37,515 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:39,521 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:40,422 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:10:41,240 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-13 01:10:41,240 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-13 01:10:41,241 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: stop_status
+2023-12-13 01:10:41,532 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:43,542 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:45,067 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:10:45,553 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:45,583 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:10:47,563 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:49,572 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:50,809 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:10:51,578 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:53,588 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:55,177 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:10:55,599 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:56,076 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:10:56,147 DEBUG   SenderThread:78421 [sender.py:send():382] send: stats
+2023-12-13 01:10:56,242 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-13 01:10:56,242 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-13 01:10:56,242 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: stop_status
+2023-12-13 01:10:57,604 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:10:59,614 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:01,256 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:11:01,625 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:03,635 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:05,109 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:11:05,646 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:06,454 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:11:07,651 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:09,661 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:11,246 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-13 01:11:11,246 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: stop_status
+2023-12-13 01:11:11,246 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-13 01:11:11,561 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:11:11,672 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:13,682 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:15,140 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:11:15,691 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:16,892 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:11:17,702 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:19,712 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:21,722 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:22,071 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:11:23,733 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:25,185 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:11:25,743 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:26,152 DEBUG   SenderThread:78421 [sender.py:send():382] send: stats
+2023-12-13 01:11:26,250 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-13 01:11:26,251 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-13 01:11:26,251 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: stop_status
+2023-12-13 01:11:27,266 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:11:27,753 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:29,764 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:31,774 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:32,429 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:11:33,785 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:35,197 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:11:35,795 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:37,594 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:11:37,805 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:38,480 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-13 01:11:38,481 DEBUG   SenderThread:78421 [sender.py:send():382] send: history
+2023-12-13 01:11:38,481 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: summary_record
+2023-12-13 01:11:38,481 INFO    SenderThread:78421 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-13 01:11:38,810 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/wandb-summary.json
+2023-12-13 01:11:39,816 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:40,821 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:11:41,255 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-13 01:11:41,256 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-13 01:11:41,256 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: stop_status
+2023-12-13 01:11:43,433 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:11:48,457 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:11:50,911 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:11:51,056 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:11:53,480 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:11:56,157 DEBUG   SenderThread:78421 [sender.py:send():382] send: stats
+2023-12-13 01:11:56,259 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-13 01:11:56,261 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-13 01:11:56,261 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: stop_status
+2023-12-13 01:11:58,550 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:12:03,571 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:12:06,288 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:12:08,595 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:12:11,264 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-13 01:12:11,266 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-13 01:12:11,266 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: stop_status
+2023-12-13 01:12:14,513 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:12:19,002 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:12:19,182 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:12:19,568 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:12:20,199 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:12:21,201 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:12:23,239 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:12:24,745 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:12:25,254 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:12:26,163 DEBUG   SenderThread:78421 [sender.py:send():382] send: stats
+2023-12-13 01:12:26,283 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-13 01:12:26,283 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-13 01:12:26,283 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: stop_status
+2023-12-13 01:12:27,289 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:12:28,833 DEBUG   SenderThread:78421 [sender.py:send():382] send: exit
+2023-12-13 01:12:28,833 INFO    SenderThread:78421 [sender.py:send_exit():589] handling exit code: 255
+2023-12-13 01:12:28,833 INFO    SenderThread:78421 [sender.py:send_exit():591] handling runtime: 212
+2023-12-13 01:12:28,834 INFO    SenderThread:78421 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-13 01:12:28,834 INFO    SenderThread:78421 [sender.py:send_exit():597] send defer
+2023-12-13 01:12:28,834 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 01:12:28,834 INFO    HandlerThread:78421 [handler.py:handle_request_defer():172] handle defer: 0
+2023-12-13 01:12:28,834 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: defer
+2023-12-13 01:12:28,834 INFO    SenderThread:78421 [sender.py:send_request_defer():613] handle sender defer: 0
+2023-12-13 01:12:28,834 INFO    SenderThread:78421 [sender.py:transition_state():617] send defer: 1
+2023-12-13 01:12:28,834 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 01:12:28,834 INFO    HandlerThread:78421 [handler.py:handle_request_defer():172] handle defer: 1
+2023-12-13 01:12:28,834 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: defer
+2023-12-13 01:12:28,834 INFO    SenderThread:78421 [sender.py:send_request_defer():613] handle sender defer: 1
+2023-12-13 01:12:28,834 INFO    SenderThread:78421 [sender.py:transition_state():617] send defer: 2
+2023-12-13 01:12:28,834 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 01:12:28,834 INFO    HandlerThread:78421 [handler.py:handle_request_defer():172] handle defer: 2
+2023-12-13 01:12:28,834 INFO    HandlerThread:78421 [system_monitor.py:finish():203] Stopping system monitor
+2023-12-13 01:12:28,834 DEBUG   SystemMonitor:78421 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-12-13 01:12:28,835 DEBUG   SystemMonitor:78421 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-12-13 01:12:28,835 INFO    HandlerThread:78421 [interfaces.py:finish():202] Joined cpu monitor
+2023-12-13 01:12:28,835 INFO    HandlerThread:78421 [interfaces.py:finish():202] Joined disk monitor
+2023-12-13 01:12:28,835 INFO    HandlerThread:78421 [interfaces.py:finish():202] Joined memory monitor
+2023-12-13 01:12:28,835 INFO    HandlerThread:78421 [interfaces.py:finish():202] Joined network monitor
+2023-12-13 01:12:28,835 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: defer
+2023-12-13 01:12:28,835 INFO    SenderThread:78421 [sender.py:send_request_defer():613] handle sender defer: 2
+2023-12-13 01:12:28,835 INFO    SenderThread:78421 [sender.py:transition_state():617] send defer: 3
+2023-12-13 01:12:28,835 DEBUG   SenderThread:78421 [sender.py:send():382] send: stats
+2023-12-13 01:12:28,836 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 01:12:28,836 INFO    HandlerThread:78421 [handler.py:handle_request_defer():172] handle defer: 3
+2023-12-13 01:12:28,836 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: defer
+2023-12-13 01:12:28,836 INFO    SenderThread:78421 [sender.py:send_request_defer():613] handle sender defer: 3
+2023-12-13 01:12:28,836 INFO    SenderThread:78421 [sender.py:transition_state():617] send defer: 4
+2023-12-13 01:12:28,836 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 01:12:28,836 INFO    HandlerThread:78421 [handler.py:handle_request_defer():172] handle defer: 4
+2023-12-13 01:12:28,836 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: defer
+2023-12-13 01:12:28,836 INFO    SenderThread:78421 [sender.py:send_request_defer():613] handle sender defer: 4
+2023-12-13 01:12:28,836 INFO    SenderThread:78421 [sender.py:transition_state():617] send defer: 5
+2023-12-13 01:12:28,836 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 01:12:28,836 INFO    HandlerThread:78421 [handler.py:handle_request_defer():172] handle defer: 5
+2023-12-13 01:12:28,836 DEBUG   SenderThread:78421 [sender.py:send():382] send: summary
+2023-12-13 01:12:28,836 INFO    SenderThread:78421 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-13 01:12:28,837 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: defer
+2023-12-13 01:12:28,837 INFO    SenderThread:78421 [sender.py:send_request_defer():613] handle sender defer: 5
+2023-12-13 01:12:28,837 INFO    SenderThread:78421 [sender.py:transition_state():617] send defer: 6
+2023-12-13 01:12:28,837 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 01:12:28,837 INFO    HandlerThread:78421 [handler.py:handle_request_defer():172] handle defer: 6
+2023-12-13 01:12:28,837 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: defer
+2023-12-13 01:12:28,837 INFO    SenderThread:78421 [sender.py:send_request_defer():613] handle sender defer: 6
+2023-12-13 01:12:28,837 INFO    SenderThread:78421 [sender.py:transition_state():617] send defer: 7
+2023-12-13 01:12:28,837 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 01:12:28,837 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 01:12:28,837 INFO    HandlerThread:78421 [handler.py:handle_request_defer():172] handle defer: 7
+2023-12-13 01:12:28,837 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: defer
+2023-12-13 01:12:28,837 INFO    SenderThread:78421 [sender.py:send_request_defer():613] handle sender defer: 7
+2023-12-13 01:12:29,326 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/wandb-summary.json
+2023-12-13 01:12:29,327 INFO    Thread-12 :78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:12:29,362 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:12:29,838 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-13 01:12:31,236 INFO    SenderThread:78421 [sender.py:transition_state():617] send defer: 8
+2023-12-13 01:12:31,237 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: poll_exit
+2023-12-13 01:12:31,237 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 01:12:31,237 INFO    HandlerThread:78421 [handler.py:handle_request_defer():172] handle defer: 8
+2023-12-13 01:12:31,238 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: defer
+2023-12-13 01:12:31,238 INFO    SenderThread:78421 [sender.py:send_request_defer():613] handle sender defer: 8
+2023-12-13 01:12:31,238 INFO    SenderThread:78421 [job_builder.py:build():298] Attempting to build job artifact
+2023-12-13 01:12:31,239 INFO    SenderThread:78421 [job_builder.py:_get_source_type():439] no source found
+2023-12-13 01:12:31,239 INFO    SenderThread:78421 [sender.py:transition_state():617] send defer: 9
+2023-12-13 01:12:31,239 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 01:12:31,239 INFO    HandlerThread:78421 [handler.py:handle_request_defer():172] handle defer: 9
+2023-12-13 01:12:31,240 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: defer
+2023-12-13 01:12:31,240 INFO    SenderThread:78421 [sender.py:send_request_defer():613] handle sender defer: 9
+2023-12-13 01:12:31,240 INFO    SenderThread:78421 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-12-13 01:12:31,336 INFO    SenderThread:78421 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+2023-12-13 01:12:31,337 INFO    SenderThread:78421 [dir_watcher.py:finish():388] scan: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files
+2023-12-13 01:12:31,338 INFO    SenderThread:78421 [dir_watcher.py:finish():402] scan save: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/requirements.txt requirements.txt
+2023-12-13 01:12:31,338 INFO    SenderThread:78421 [dir_watcher.py:finish():402] scan save: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log output.log
+2023-12-13 01:12:31,338 INFO    SenderThread:78421 [dir_watcher.py:finish():402] scan save: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/config.yaml config.yaml
+2023-12-13 01:12:31,339 INFO    SenderThread:78421 [dir_watcher.py:finish():402] scan save: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/wandb-summary.json wandb-summary.json
+2023-12-13 01:12:31,345 INFO    SenderThread:78421 [dir_watcher.py:finish():402] scan save: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/wandb-metadata.json wandb-metadata.json
+2023-12-13 01:12:31,345 INFO    SenderThread:78421 [sender.py:transition_state():617] send defer: 10
+2023-12-13 01:12:31,350 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 01:12:31,354 INFO    HandlerThread:78421 [handler.py:handle_request_defer():172] handle defer: 10
+2023-12-13 01:12:31,359 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: defer
+2023-12-13 01:12:31,360 INFO    SenderThread:78421 [sender.py:send_request_defer():613] handle sender defer: 10
+2023-12-13 01:12:31,360 INFO    SenderThread:78421 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-13 01:12:31,599 ERROR   wandb-upload_2:78421 [internal_api.py:execute():373] 404 response executing GraphQL.
+2023-12-13 01:12:31,600 ERROR   wandb-upload_1:78421 [internal_api.py:execute():373] 404 response executing GraphQL.
+2023-12-13 01:12:31,600 ERROR   wandb-upload_2:78421 [internal_api.py:execute():374] {"errors":[{"message":"run llm_finetuning/zni3e3o2 not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2023-12-13 01:12:31,600 ERROR   wandb-upload_1:78421 [internal_api.py:execute():374] {"errors":[{"message":"run llm_finetuning/zni3e3o2 not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2023-12-13 01:12:31,601 ERROR   Thread-11 :78421 [step_upload.py:_handle_event():200] Failed to upload file: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/output.log
+Traceback (most recent call last):
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/hugo/.pyenv/versions/3.8.18/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/filesync/step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/filesync/step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/filesync/upload_job.py", line 57, in run
+    self.push()
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/filesync/upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 2380, in upload_urls
+    query_result = self.gql(
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 341, in gql
+    ret = self._retry_gql(
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/util.py", line 907, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2023-12-13 01:12:31,612 ERROR   Thread-11 :78421 [step_upload.py:_handle_event():200] Failed to upload file: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/config.yaml
+Traceback (most recent call last):
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/hugo/.pyenv/versions/3.8.18/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/filesync/step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/filesync/step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/filesync/upload_job.py", line 57, in run
+    self.push()
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/filesync/upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 2380, in upload_urls
+    query_result = self.gql(
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 341, in gql
+    ret = self._retry_gql(
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/util.py", line 907, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2023-12-13 01:12:31,641 ERROR   wandb-upload_3:78421 [internal_api.py:execute():373] 404 response executing GraphQL.
+2023-12-13 01:12:31,641 ERROR   wandb-upload_3:78421 [internal_api.py:execute():374] {"errors":[{"message":"run llm_finetuning/zni3e3o2 not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2023-12-13 01:12:31,642 ERROR   Thread-11 :78421 [step_upload.py:_handle_event():200] Failed to upload file: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/wandb-summary.json
+Traceback (most recent call last):
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/hugo/.pyenv/versions/3.8.18/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/filesync/step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/filesync/step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/filesync/upload_job.py", line 57, in run
+    self.push()
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/filesync/upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 2380, in upload_urls
+    query_result = self.gql(
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 341, in gql
+    ret = self._retry_gql(
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/util.py", line 907, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2023-12-13 01:12:31,645 ERROR   wandb-upload_0:78421 [internal_api.py:execute():373] 404 response executing GraphQL.
+2023-12-13 01:12:31,645 ERROR   wandb-upload_0:78421 [internal_api.py:execute():374] {"errors":[{"message":"run llm_finetuning/zni3e3o2 not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2023-12-13 01:12:31,646 ERROR   Thread-11 :78421 [step_upload.py:_handle_event():200] Failed to upload file: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/files/requirements.txt
+Traceback (most recent call last):
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/hugo/.pyenv/versions/3.8.18/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/filesync/step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/filesync/step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/filesync/upload_job.py", line 57, in run
+    self.push()
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/filesync/upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 2380, in upload_urls
+    query_result = self.gql(
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 341, in gql
+    ret = self._retry_gql(
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/wandb/util.py", line 907, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2023-12-13 01:12:31,859 INFO    Thread-11 :78421 [sender.py:transition_state():617] send defer: 11
+2023-12-13 01:12:31,863 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 01:12:31,863 INFO    HandlerThread:78421 [handler.py:handle_request_defer():172] handle defer: 11
+2023-12-13 01:12:31,864 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: defer
+2023-12-13 01:12:31,865 INFO    SenderThread:78421 [sender.py:send_request_defer():613] handle sender defer: 11
+2023-12-13 01:12:31,865 INFO    SenderThread:78421 [file_pusher.py:join():181] waiting for file pusher
+2023-12-13 01:12:31,865 INFO    SenderThread:78421 [sender.py:transition_state():617] send defer: 12
+2023-12-13 01:12:31,865 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 01:12:31,865 INFO    HandlerThread:78421 [handler.py:handle_request_defer():172] handle defer: 12
+2023-12-13 01:12:31,865 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: defer
+2023-12-13 01:12:31,865 INFO    SenderThread:78421 [sender.py:send_request_defer():613] handle sender defer: 12
+2023-12-13 01:12:31,865 INFO    SenderThread:78421 [file_stream.py:finish():595] file stream finish called
+2023-12-13 01:12:31,992 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:12:32,179 ERROR   FileStreamThread:78421 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/electron260/llm_finetuning/zni3e3o2/file_stream
+NoneType: None
+2023-12-13 01:12:32,381 INFO    SenderThread:78421 [file_stream.py:finish():599] file stream finish is done
+2023-12-13 01:12:32,382 INFO    SenderThread:78421 [sender.py:transition_state():617] send defer: 13
+2023-12-13 01:12:32,383 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 01:12:32,383 INFO    HandlerThread:78421 [handler.py:handle_request_defer():172] handle defer: 13
+2023-12-13 01:12:32,384 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: defer
+2023-12-13 01:12:32,384 INFO    SenderThread:78421 [sender.py:send_request_defer():613] handle sender defer: 13
+2023-12-13 01:12:32,384 INFO    SenderThread:78421 [sender.py:transition_state():617] send defer: 14
+2023-12-13 01:12:32,385 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 01:12:32,386 INFO    HandlerThread:78421 [handler.py:handle_request_defer():172] handle defer: 14
+2023-12-13 01:12:32,385 DEBUG   SenderThread:78421 [sender.py:send():382] send: final
+2023-12-13 01:12:32,386 DEBUG   SenderThread:78421 [sender.py:send():382] send: footer
+2023-12-13 01:12:32,387 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: defer
+2023-12-13 01:12:32,387 INFO    SenderThread:78421 [sender.py:send_request_defer():613] handle sender defer: 14
+2023-12-13 01:12:32,388 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-13 01:12:32,389 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: server_info
+2023-12-13 01:12:32,389 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: get_summary
+2023-12-13 01:12:32,389 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: sampled_history
+2023-12-13 01:12:32,390 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: poll_exit
+2023-12-13 01:12:32,390 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-13 01:12:32,390 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: server_info
+2023-12-13 01:12:32,395 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: job_info
+2023-12-13 01:12:32,604 DEBUG   SenderThread:78421 [sender.py:send_request():409] send_request: job_info
+2023-12-13 01:12:32,605 INFO    MainThread:78421 [wandb_run.py:_footer_history_summary_info():3837] rendering history
+2023-12-13 01:12:32,606 INFO    MainThread:78421 [wandb_run.py:_footer_history_summary_info():3869] rendering summary
+2023-12-13 01:12:32,606 INFO    MainThread:78421 [wandb_run.py:_footer_sync_info():3796] logging synced files
+2023-12-13 01:12:32,607 DEBUG   HandlerThread:78421 [handler.py:handle_request():146] handle_request: shutdown
+2023-12-13 01:12:32,607 INFO    HandlerThread:78421 [handler.py:finish():866] shutting down handler
+2023-12-13 01:12:33,399 INFO    WriterThread:78421 [datastore.py:close():294] close: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_010855-zni3e3o2/run-zni3e3o2.wandb
+2023-12-13 01:12:33,585 WARNING StreamThr :78421 [internal.py:is_dead():414] Internal process exiting, parent pid 78396 disappeared
+2023-12-13 01:12:33,586 ERROR   StreamThr :78421 [internal.py:wandb_internal():152] Internal process shutdown.
+2023-12-13 01:12:33,610 INFO    SenderThread:78421 [sender.py:finish():1548] shutting down sender
+2023-12-13 01:12:33,611 INFO    SenderThread:78421 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-13 01:12:33,611 INFO    SenderThread:78421 [file_pusher.py:join():181] waiting for file pusher

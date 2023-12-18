@@ -1,0 +1,27 @@
+2023-12-09 20:55:51,052 INFO    MainThread:78079 [wandb_setup.py:_flush():76] Current SDK version is 0.16.1
+2023-12-09 20:55:51,052 INFO    MainThread:78079 [wandb_setup.py:_flush():76] Configure stats pid to 78079
+2023-12-09 20:55:51,052 INFO    MainThread:78079 [wandb_setup.py:_flush():76] Loading settings from /Users/hugo/.config/wandb/settings
+2023-12-09 20:55:51,052 INFO    MainThread:78079 [wandb_setup.py:_flush():76] Loading settings from /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/settings
+2023-12-09 20:55:51,052 INFO    MainThread:78079 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-12-09 20:55:51,052 INFO    MainThread:78079 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-12-09 20:55:51,052 INFO    MainThread:78079 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': '/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/train.py', 'program': 'train.py'}
+2023-12-09 20:55:51,053 INFO    MainThread:78079 [wandb_init.py:_log_setup():524] Logging user logs to /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231209_205551-w6k3933u/logs/debug.log
+2023-12-09 20:55:51,053 INFO    MainThread:78079 [wandb_init.py:_log_setup():525] Logging internal logs to /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231209_205551-w6k3933u/logs/debug-internal.log
+2023-12-09 20:55:51,053 INFO    MainThread:78079 [wandb_init.py:init():564] calling init triggers
+2023-12-09 20:55:51,053 INFO    MainThread:78079 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.001, 'head_nb': 6, 'block_nb': 6, 'emb_size': 384, 'block_size': 512}
+2023-12-09 20:55:51,053 INFO    MainThread:78079 [wandb_init.py:init():614] starting backend
+2023-12-09 20:55:51,053 INFO    MainThread:78079 [wandb_init.py:init():618] setting up manager
+2023-12-09 20:55:51,056 INFO    MainThread:78079 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2023-12-09 20:55:51,058 INFO    MainThread:78079 [wandb_init.py:init():624] backend started and connected
+2023-12-09 20:55:51,064 INFO    MainThread:78079 [wandb_init.py:init():716] updated telemetry
+2023-12-09 20:55:51,067 INFO    MainThread:78079 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2023-12-09 20:55:51,547 INFO    MainThread:78079 [wandb_run.py:_on_init():2254] communicating current version
+2023-12-09 20:55:51,654 INFO    MainThread:78079 [wandb_run.py:_on_init():2263] got version response 
+2023-12-09 20:55:51,654 INFO    MainThread:78079 [wandb_init.py:init():800] starting run threads in backend
+2023-12-09 20:55:51,789 INFO    MainThread:78079 [wandb_run.py:_console_start():2233] atexit reg
+2023-12-09 20:55:51,789 INFO    MainThread:78079 [wandb_run.py:_redirect():2088] redirect: wrap_raw
+2023-12-09 20:55:51,789 INFO    MainThread:78079 [wandb_run.py:_redirect():2153] Wrapping output streams.
+2023-12-09 20:55:51,789 INFO    MainThread:78079 [wandb_run.py:_redirect():2178] Redirects installed.
+2023-12-09 20:55:51,790 INFO    MainThread:78079 [wandb_init.py:init():841] run started, returning control to user process
+2023-12-10 20:48:24,552 WARNING MsgRouterThr:78079 [router.py:message_loop():77] message_loop has been closed

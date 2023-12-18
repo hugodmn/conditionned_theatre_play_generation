@@ -1,0 +1,428 @@
+2023-12-14 18:34:21,459 INFO    StreamThr :63804 [internal.py:wandb_internal():86] W&B internal server running at pid: 63804, started at: 2023-12-14 18:34:21.456964
+2023-12-14 18:34:21,461 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status
+2023-12-14 18:34:21,465 INFO    WriterThread:63804 [datastore.py:open_for_write():85] open: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/run-wg131smu.wandb
+2023-12-14 18:34:21,466 DEBUG   SenderThread:63804 [sender.py:send():382] send: header
+2023-12-14 18:34:21,468 DEBUG   SenderThread:63804 [sender.py:send():382] send: run
+2023-12-14 18:34:21,995 INFO    SenderThread:63804 [dir_watcher.py:__init__():211] watching files in: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files
+2023-12-14 18:34:21,996 INFO    SenderThread:63804 [sender.py:_start_run_threads():1136] run started: wg131smu with start time 1702575261.457408
+2023-12-14 18:34:22,016 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: check_version
+2023-12-14 18:34:22,016 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: check_version
+2023-12-14 18:34:22,128 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: run_start
+2023-12-14 18:34:22,130 DEBUG   HandlerThread:63804 [system_info.py:__init__():32] System info init
+2023-12-14 18:34:22,130 DEBUG   HandlerThread:63804 [system_info.py:__init__():47] System info init done
+2023-12-14 18:34:22,130 INFO    HandlerThread:63804 [system_monitor.py:start():194] Starting system monitor
+2023-12-14 18:34:22,130 INFO    SystemMonitor:63804 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-12-14 18:34:22,131 INFO    HandlerThread:63804 [system_monitor.py:probe():214] Collecting system info
+2023-12-14 18:34:22,131 INFO    SystemMonitor:63804 [interfaces.py:start():190] Started cpu monitoring
+2023-12-14 18:34:22,132 DEBUG   HandlerThread:63804 [system_info.py:probe():196] Probing system
+2023-12-14 18:34:22,132 INFO    SystemMonitor:63804 [interfaces.py:start():190] Started disk monitoring
+2023-12-14 18:34:22,135 INFO    SystemMonitor:63804 [interfaces.py:start():190] Started memory monitoring
+2023-12-14 18:34:22,136 INFO    SystemMonitor:63804 [interfaces.py:start():190] Started network monitoring
+2023-12-14 18:34:22,155 DEBUG   HandlerThread:63804 [system_info.py:_probe_git():181] Probing git
+2023-12-14 18:34:22,177 DEBUG   HandlerThread:63804 [system_info.py:_probe_git():189] Probing git done
+2023-12-14 18:34:22,178 DEBUG   HandlerThread:63804 [system_info.py:probe():244] Probing system done
+2023-12-14 18:34:22,178 DEBUG   HandlerThread:63804 [system_monitor.py:probe():223] {'os': 'macOS-13.3-x86_64-i386-64bit', 'python': '3.8.18', 'heartbeatAt': '2023-12-14T17:34:22.132744', 'startedAt': '2023-12-14T17:34:21.443160', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/hugodmn/conditionned_theatre_play_generation.git', 'commit': None}, 'email': 'hugo.daumain@edu.devinci.fr', 'root': '/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation', 'host': 'macbook-pro-9.home', 'username': 'hugo', 'executable': '/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/bin/python', 'cpu_count': 12, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2400, 'min': 2400, 'max': 2400}, 'cpu_freq_per_core': [{'current': 2400, 'min': 2400, 'max': 2400}], 'disk': {'/': {'total': 926.3517189025879, 'used': 8.455924987792969}}, 'memory': {'total': 32.0}}
+2023-12-14 18:34:22,178 INFO    HandlerThread:63804 [system_monitor.py:probe():224] Finished collecting system info
+2023-12-14 18:34:22,178 INFO    HandlerThread:63804 [system_monitor.py:probe():227] Publishing system info
+2023-12-14 18:34:22,178 DEBUG   HandlerThread:63804 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-12-14 18:34:22,178 DEBUG   HandlerThread:63804 [system_info.py:_save_pip():68] Saving pip packages done
+2023-12-14 18:34:22,179 INFO    HandlerThread:63804 [system_monitor.py:probe():229] Finished publishing system info
+2023-12-14 18:34:22,181 DEBUG   SenderThread:63804 [sender.py:send():382] send: files
+2023-12-14 18:34:22,182 INFO    SenderThread:63804 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2023-12-14 18:34:22,185 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:34:22,186 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:34:22,186 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:34:22,383 DEBUG   SenderThread:63804 [sender.py:send():382] send: telemetry
+2023-12-14 18:34:22,687 INFO    wandb-upload_0:63804 [upload_job.py:push():131] Uploaded file /var/folders/3t/6vk3vg696px0cpvl0hqnmnc40000gn/T/tmpo1puedxbwandb/yx69on9u-wandb-metadata.json
+2023-12-14 18:34:22,997 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:34:22,997 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/requirements.txt
+2023-12-14 18:34:22,997 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/wandb-metadata.json
+2023-12-14 18:34:25,007 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:34:26,510 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:34:31,535 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:34:36,561 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:34:37,192 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:34:37,192 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:34:37,192 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:34:41,087 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:34:41,863 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:34:43,097 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:34:45,107 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:34:46,965 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:34:47,117 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:34:49,128 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:34:51,138 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:34:52,062 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:34:52,196 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:34:52,196 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:34:52,306 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:34:53,149 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:34:53,149 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/config.yaml
+2023-12-14 18:34:55,159 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:34:57,170 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:34:57,498 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:34:59,180 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:35:01,190 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:35:02,598 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:35:03,201 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:35:05,212 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:35:07,202 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:35:07,202 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:35:07,202 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:35:07,222 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:35:07,696 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:35:09,233 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:35:11,243 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:35:11,533 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-14 18:35:11,534 DEBUG   SenderThread:63804 [sender.py:send():382] send: history
+2023-12-14 18:35:11,534 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: summary_record
+2023-12-14 18:35:11,535 INFO    SenderThread:63804 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-14 18:35:12,248 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/wandb-summary.json
+2023-12-14 18:35:12,804 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:35:13,254 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:35:15,265 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:35:17,276 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:35:18,057 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:35:19,286 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:35:21,300 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:35:22,142 DEBUG   SystemMonitor:63804 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-12-14 18:35:22,143 DEBUG   SenderThread:63804 [sender.py:send():382] send: stats
+2023-12-14 18:35:22,207 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:35:22,207 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:35:22,207 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:35:23,315 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:35:23,321 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:35:25,341 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:35:27,362 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:35:28,566 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:35:29,382 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:35:31,400 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:35:31,856 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-14 18:35:31,857 DEBUG   SenderThread:63804 [sender.py:send():382] send: history
+2023-12-14 18:35:31,857 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: summary_record
+2023-12-14 18:35:31,857 INFO    SenderThread:63804 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-14 18:35:32,411 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/wandb-summary.json
+2023-12-14 18:35:33,421 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:35:33,877 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:35:37,217 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:35:37,217 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:35:37,218 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:35:39,467 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:35:44,491 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:35:49,516 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:35:52,154 DEBUG   SenderThread:63804 [sender.py:send():382] send: stats
+2023-12-14 18:35:52,222 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:35:52,223 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:35:52,223 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:35:55,414 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:36:00,436 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:36:05,461 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:36:07,228 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:36:07,228 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:36:07,229 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:36:10,580 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:36:13,641 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:15,652 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:15,749 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:36:17,662 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:19,672 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:20,972 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:36:21,680 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:22,160 DEBUG   SenderThread:63804 [sender.py:send():382] send: stats
+2023-12-14 18:36:22,229 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:36:22,233 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:36:22,233 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:36:23,690 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:25,700 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:26,181 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:36:27,711 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:29,721 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:31,356 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:36:31,732 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:33,742 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:35,753 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:36,530 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:36:37,235 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:36:37,235 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:36:37,235 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:36:37,759 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:39,770 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:39,809 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-14 18:36:39,809 DEBUG   SenderThread:63804 [sender.py:send():382] send: history
+2023-12-14 18:36:39,809 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: summary_record
+2023-12-14 18:36:39,810 INFO    SenderThread:63804 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-14 18:36:40,771 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:40,771 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/wandb-summary.json
+2023-12-14 18:36:41,776 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:41,838 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:36:43,787 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:45,798 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:47,091 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:36:47,808 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:49,819 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:51,830 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:52,166 DEBUG   SenderThread:63804 [sender.py:send():382] send: stats
+2023-12-14 18:36:52,166 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:36:52,240 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:36:52,240 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:36:52,240 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:36:53,840 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:55,850 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:57,189 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:36:57,858 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:36:59,864 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:00,091 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-14 18:37:00,092 DEBUG   SenderThread:63804 [sender.py:send():382] send: history
+2023-12-14 18:37:00,092 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: summary_record
+2023-12-14 18:37:00,092 INFO    SenderThread:63804 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-14 18:37:00,869 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:00,870 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/wandb-summary.json
+2023-12-14 18:37:01,875 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:02,342 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:37:02,880 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:03,886 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:05,896 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:07,245 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:37:07,245 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:37:07,246 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:37:07,394 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:37:07,907 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:09,917 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:11,927 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:12,519 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:37:13,938 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:15,949 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:17,714 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:37:17,961 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:19,972 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:21,979 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:22,172 DEBUG   SenderThread:63804 [sender.py:send():382] send: stats
+2023-12-14 18:37:22,247 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:37:22,250 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:37:22,250 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:37:22,855 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:37:23,990 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:25,996 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:27,876 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:37:28,007 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:29,791 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-14 18:37:29,791 DEBUG   SenderThread:63804 [sender.py:send():382] send: history
+2023-12-14 18:37:29,792 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: summary_record
+2023-12-14 18:37:29,792 INFO    SenderThread:63804 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-14 18:37:30,018 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:30,018 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/wandb-summary.json
+2023-12-14 18:37:31,019 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:32,023 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:33,054 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:37:34,034 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:36,044 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:37,253 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:37:37,253 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:37:37,253 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:37:38,055 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:38,344 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:37:40,065 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:42,070 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:43,646 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:37:44,081 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:46,092 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:48,102 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:48,932 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:37:50,113 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:50,152 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-14 18:37:50,153 DEBUG   SenderThread:63804 [sender.py:send():382] send: history
+2023-12-14 18:37:50,153 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: summary_record
+2023-12-14 18:37:50,153 INFO    SenderThread:63804 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-14 18:37:51,118 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:51,118 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/wandb-summary.json
+2023-12-14 18:37:52,124 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:52,178 DEBUG   SenderThread:63804 [sender.py:send():382] send: stats
+2023-12-14 18:37:52,258 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:37:52,259 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:37:52,259 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:37:53,124 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:53,968 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:37:54,130 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:56,140 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:58,151 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:37:59,186 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:38:00,161 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:01,167 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:03,177 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:04,427 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:38:05,184 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:07,195 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:07,264 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:38:07,264 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:38:07,264 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:38:09,205 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:09,633 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:38:11,215 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:13,226 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:14,867 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:38:15,237 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:17,247 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:19,258 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:19,805 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-14 18:38:19,806 DEBUG   SenderThread:63804 [sender.py:send():382] send: history
+2023-12-14 18:38:19,806 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: summary_record
+2023-12-14 18:38:19,807 INFO    SenderThread:63804 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-14 18:38:20,219 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:38:20,263 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/wandb-summary.json
+2023-12-14 18:38:21,269 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:22,184 DEBUG   SenderThread:63804 [sender.py:send():382] send: stats
+2023-12-14 18:38:22,269 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:38:22,269 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:38:22,270 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:38:23,279 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:25,289 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:25,501 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:38:27,301 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:29,311 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:30,837 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:38:31,319 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:33,330 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:35,340 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:36,132 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:38:37,271 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:38:37,272 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:38:37,274 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:38:37,349 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:39,360 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:40,193 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-14 18:38:40,193 DEBUG   SenderThread:63804 [sender.py:send():382] send: history
+2023-12-14 18:38:40,193 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: summary_record
+2023-12-14 18:38:40,194 INFO    SenderThread:63804 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-14 18:38:40,363 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/wandb-summary.json
+2023-12-14 18:38:41,198 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:38:41,369 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:43,379 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:45,391 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:46,303 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:38:47,398 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:49,408 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:51,419 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:51,524 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:38:52,189 DEBUG   SenderThread:63804 [sender.py:send():382] send: stats
+2023-12-14 18:38:52,276 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-14 18:38:52,276 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: stop_status
+2023-12-14 18:38:52,279 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-14 18:38:53,429 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:55,440 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:56,717 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:38:57,450 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:59,461 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:38:59,879 DEBUG   SenderThread:63804 [sender.py:send():382] send: exit
+2023-12-14 18:38:59,879 INFO    SenderThread:63804 [sender.py:send_exit():589] handling exit code: 255
+2023-12-14 18:38:59,879 INFO    SenderThread:63804 [sender.py:send_exit():591] handling runtime: 277
+2023-12-14 18:38:59,879 INFO    SenderThread:63804 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-14 18:38:59,879 INFO    SenderThread:63804 [sender.py:send_exit():597] send defer
+2023-12-14 18:38:59,879 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: defer
+2023-12-14 18:38:59,879 INFO    HandlerThread:63804 [handler.py:handle_request_defer():172] handle defer: 0
+2023-12-14 18:38:59,880 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: defer
+2023-12-14 18:38:59,880 INFO    SenderThread:63804 [sender.py:send_request_defer():613] handle sender defer: 0
+2023-12-14 18:38:59,880 INFO    SenderThread:63804 [sender.py:transition_state():617] send defer: 1
+2023-12-14 18:38:59,880 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: defer
+2023-12-14 18:38:59,880 INFO    HandlerThread:63804 [handler.py:handle_request_defer():172] handle defer: 1
+2023-12-14 18:38:59,880 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: defer
+2023-12-14 18:38:59,880 INFO    SenderThread:63804 [sender.py:send_request_defer():613] handle sender defer: 1
+2023-12-14 18:38:59,880 INFO    SenderThread:63804 [sender.py:transition_state():617] send defer: 2
+2023-12-14 18:38:59,880 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: defer
+2023-12-14 18:38:59,880 INFO    HandlerThread:63804 [handler.py:handle_request_defer():172] handle defer: 2
+2023-12-14 18:38:59,880 INFO    HandlerThread:63804 [system_monitor.py:finish():203] Stopping system monitor
+2023-12-14 18:38:59,880 DEBUG   SystemMonitor:63804 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-12-14 18:38:59,880 INFO    HandlerThread:63804 [interfaces.py:finish():202] Joined cpu monitor
+2023-12-14 18:38:59,880 DEBUG   SystemMonitor:63804 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-12-14 18:38:59,880 INFO    HandlerThread:63804 [interfaces.py:finish():202] Joined disk monitor
+2023-12-14 18:38:59,881 INFO    HandlerThread:63804 [interfaces.py:finish():202] Joined memory monitor
+2023-12-14 18:38:59,881 INFO    HandlerThread:63804 [interfaces.py:finish():202] Joined network monitor
+2023-12-14 18:38:59,881 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: defer
+2023-12-14 18:38:59,881 INFO    SenderThread:63804 [sender.py:send_request_defer():613] handle sender defer: 2
+2023-12-14 18:38:59,881 INFO    SenderThread:63804 [sender.py:transition_state():617] send defer: 3
+2023-12-14 18:38:59,881 DEBUG   SenderThread:63804 [sender.py:send():382] send: stats
+2023-12-14 18:38:59,881 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: defer
+2023-12-14 18:38:59,881 INFO    HandlerThread:63804 [handler.py:handle_request_defer():172] handle defer: 3
+2023-12-14 18:38:59,881 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: defer
+2023-12-14 18:38:59,881 INFO    SenderThread:63804 [sender.py:send_request_defer():613] handle sender defer: 3
+2023-12-14 18:38:59,881 INFO    SenderThread:63804 [sender.py:transition_state():617] send defer: 4
+2023-12-14 18:38:59,881 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: defer
+2023-12-14 18:38:59,881 INFO    HandlerThread:63804 [handler.py:handle_request_defer():172] handle defer: 4
+2023-12-14 18:38:59,882 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: defer
+2023-12-14 18:38:59,882 INFO    SenderThread:63804 [sender.py:send_request_defer():613] handle sender defer: 4
+2023-12-14 18:38:59,882 INFO    SenderThread:63804 [sender.py:transition_state():617] send defer: 5
+2023-12-14 18:38:59,882 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: defer
+2023-12-14 18:38:59,882 INFO    HandlerThread:63804 [handler.py:handle_request_defer():172] handle defer: 5
+2023-12-14 18:38:59,882 DEBUG   SenderThread:63804 [sender.py:send():382] send: summary
+2023-12-14 18:38:59,882 INFO    SenderThread:63804 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-14 18:38:59,882 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: defer
+2023-12-14 18:38:59,882 INFO    SenderThread:63804 [sender.py:send_request_defer():613] handle sender defer: 5
+2023-12-14 18:38:59,882 INFO    SenderThread:63804 [sender.py:transition_state():617] send defer: 6
+2023-12-14 18:38:59,882 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: defer
+2023-12-14 18:38:59,882 INFO    HandlerThread:63804 [handler.py:handle_request_defer():172] handle defer: 6
+2023-12-14 18:38:59,882 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: defer
+2023-12-14 18:38:59,882 INFO    SenderThread:63804 [sender.py:send_request_defer():613] handle sender defer: 6
+2023-12-14 18:38:59,882 INFO    SenderThread:63804 [sender.py:transition_state():617] send defer: 7
+2023-12-14 18:38:59,882 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: status_report
+2023-12-14 18:38:59,882 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: defer
+2023-12-14 18:38:59,882 INFO    HandlerThread:63804 [handler.py:handle_request_defer():172] handle defer: 7
+2023-12-14 18:38:59,883 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: defer
+2023-12-14 18:38:59,883 INFO    SenderThread:63804 [sender.py:send_request_defer():613] handle sender defer: 7
+2023-12-14 18:39:00,466 INFO    Thread-12 :63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/wandb-summary.json
+2023-12-14 18:39:00,880 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-14 18:39:01,592 INFO    SenderThread:63804 [sender.py:transition_state():617] send defer: 8
+2023-12-14 18:39:01,592 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: poll_exit
+2023-12-14 18:39:01,592 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: defer
+2023-12-14 18:39:01,592 INFO    HandlerThread:63804 [handler.py:handle_request_defer():172] handle defer: 8
+2023-12-14 18:39:01,593 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: defer
+2023-12-14 18:39:01,593 INFO    SenderThread:63804 [sender.py:send_request_defer():613] handle sender defer: 8
+2023-12-14 18:39:01,593 INFO    SenderThread:63804 [job_builder.py:build():298] Attempting to build job artifact
+2023-12-14 18:39:01,594 INFO    SenderThread:63804 [job_builder.py:_get_source_type():439] no source found
+2023-12-14 18:39:01,594 INFO    SenderThread:63804 [sender.py:transition_state():617] send defer: 9
+2023-12-14 18:39:01,594 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: defer
+2023-12-14 18:39:01,594 INFO    HandlerThread:63804 [handler.py:handle_request_defer():172] handle defer: 9
+2023-12-14 18:39:01,594 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: defer
+2023-12-14 18:39:01,594 INFO    SenderThread:63804 [sender.py:send_request_defer():613] handle sender defer: 9
+2023-12-14 18:39:01,594 INFO    SenderThread:63804 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-12-14 18:39:01,885 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-14 18:39:02,472 INFO    SenderThread:63804 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:39:02,473 INFO    SenderThread:63804 [dir_watcher.py:finish():388] scan: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files
+2023-12-14 18:39:02,473 INFO    SenderThread:63804 [dir_watcher.py:finish():402] scan save: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/requirements.txt requirements.txt
+2023-12-14 18:39:02,473 INFO    SenderThread:63804 [dir_watcher.py:finish():402] scan save: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log output.log
+2023-12-14 18:39:02,474 INFO    SenderThread:63804 [dir_watcher.py:finish():402] scan save: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/config.yaml config.yaml
+2023-12-14 18:39:02,474 INFO    SenderThread:63804 [dir_watcher.py:finish():402] scan save: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/wandb-summary.json wandb-summary.json
+2023-12-14 18:39:02,475 INFO    SenderThread:63804 [dir_watcher.py:finish():402] scan save: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/wandb-metadata.json wandb-metadata.json
+2023-12-14 18:39:02,475 INFO    SenderThread:63804 [sender.py:transition_state():617] send defer: 10
+2023-12-14 18:39:02,475 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: poll_exit
+2023-12-14 18:39:02,476 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: defer
+2023-12-14 18:39:02,476 INFO    HandlerThread:63804 [handler.py:handle_request_defer():172] handle defer: 10
+2023-12-14 18:39:02,477 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: defer
+2023-12-14 18:39:02,477 INFO    SenderThread:63804 [sender.py:send_request_defer():613] handle sender defer: 10
+2023-12-14 18:39:02,477 INFO    SenderThread:63804 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-14 18:39:02,879 INFO    wandb-upload_1:63804 [upload_job.py:push():131] Uploaded file /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/output.log
+2023-12-14 18:39:02,880 INFO    wandb-upload_2:63804 [upload_job.py:push():131] Uploaded file /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/config.yaml
+2023-12-14 18:39:02,880 INFO    wandb-upload_0:63804 [upload_job.py:push():131] Uploaded file /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/requirements.txt
+2023-12-14 18:39:02,885 INFO    wandb-upload_3:63804 [upload_job.py:push():131] Uploaded file /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/files/wandb-summary.json
+2023-12-14 18:39:02,886 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-14 18:39:02,887 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: poll_exit
+2023-12-14 18:39:03,090 INFO    Thread-11 :63804 [sender.py:transition_state():617] send defer: 11
+2023-12-14 18:39:03,091 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: defer
+2023-12-14 18:39:03,091 INFO    HandlerThread:63804 [handler.py:handle_request_defer():172] handle defer: 11
+2023-12-14 18:39:03,091 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: defer
+2023-12-14 18:39:03,091 INFO    SenderThread:63804 [sender.py:send_request_defer():613] handle sender defer: 11
+2023-12-14 18:39:03,091 INFO    SenderThread:63804 [file_pusher.py:join():181] waiting for file pusher
+2023-12-14 18:39:03,091 INFO    SenderThread:63804 [sender.py:transition_state():617] send defer: 12
+2023-12-14 18:39:03,091 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: defer
+2023-12-14 18:39:03,091 INFO    HandlerThread:63804 [handler.py:handle_request_defer():172] handle defer: 12
+2023-12-14 18:39:03,091 DEBUG   SenderThread:63804 [sender.py:send_request():409] send_request: defer
+2023-12-14 18:39:03,091 INFO    SenderThread:63804 [sender.py:send_request_defer():613] handle sender defer: 12
+2023-12-14 18:39:03,091 INFO    SenderThread:63804 [file_stream.py:finish():595] file stream finish called
+2023-12-14 18:39:03,891 WARNING StreamThr :63804 [internal.py:is_dead():414] Internal process exiting, parent pid 63456 disappeared
+2023-12-14 18:39:03,891 ERROR   StreamThr :63804 [internal.py:wandb_internal():152] Internal process shutdown.
+2023-12-14 18:39:03,892 DEBUG   HandlerThread:63804 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-14 18:39:03,892 INFO    HandlerThread:63804 [handler.py:finish():866] shutting down handler
+2023-12-14 18:39:03,892 INFO    WriterThread:63804 [datastore.py:close():294] close: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231214_183421-wg131smu/run-wg131smu.wandb
+2023-12-14 18:39:03,904 INFO    SenderThread:63804 [file_stream.py:finish():599] file stream finish is done
+2023-12-14 18:39:03,904 INFO    SenderThread:63804 [sender.py:transition_state():617] send defer: 13
+2023-12-14 18:39:03,904 INFO    SenderThread:63804 [sender.py:finish():1548] shutting down sender
+2023-12-14 18:39:03,904 INFO    SenderThread:63804 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-14 18:39:03,904 INFO    SenderThread:63804 [file_pusher.py:join():181] waiting for file pusher

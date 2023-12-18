@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "train.py", line 219, in <module>
+    train_loader = DataLoader(train_dataset, batch_size=batch_sz, shuffle=True, num_workers=8)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 349, in __init__
+    sampler = RandomSampler(dataset, generator=generator)  # type: ignore[arg-type]
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/utils/data/sampler.py", line 139, in __init__
+    if not isinstance(self.num_samples, int) or self.num_samples <= 0:
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/lib/python3.8/site-packages/torch/utils/data/sampler.py", line 146, in num_samples
+    return len(self.data_source)
+  File "/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/dataset.py", line 49, in __len__
+    return len(self.dataset) - self.ctx_len - 1
+AttributeError: 'TheatreDataset' object has no attribute 'dataset'

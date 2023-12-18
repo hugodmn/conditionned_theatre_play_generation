@@ -1,0 +1,173 @@
+2023-12-13 17:04:06,743 INFO    StreamThr :83907 [internal.py:wandb_internal():86] W&B internal server running at pid: 83907, started at: 2023-12-13 17:04:06.740548
+2023-12-13 17:04:06,745 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: status
+2023-12-13 17:04:06,750 INFO    WriterThread:83907 [datastore.py:open_for_write():85] open: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/run-iuebpl8a.wandb
+2023-12-13 17:04:06,751 DEBUG   SenderThread:83907 [sender.py:send():382] send: header
+2023-12-13 17:04:06,753 DEBUG   SenderThread:83907 [sender.py:send():382] send: run
+2023-12-13 17:04:07,234 INFO    SenderThread:83907 [dir_watcher.py:__init__():211] watching files in: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/files
+2023-12-13 17:04:07,234 INFO    SenderThread:83907 [sender.py:_start_run_threads():1136] run started: iuebpl8a with start time 1702483446.741155
+2023-12-13 17:04:07,253 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: check_version
+2023-12-13 17:04:07,254 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: check_version
+2023-12-13 17:04:07,416 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: run_start
+2023-12-13 17:04:07,419 DEBUG   HandlerThread:83907 [system_info.py:__init__():32] System info init
+2023-12-13 17:04:07,419 DEBUG   HandlerThread:83907 [system_info.py:__init__():47] System info init done
+2023-12-13 17:04:07,419 INFO    HandlerThread:83907 [system_monitor.py:start():194] Starting system monitor
+2023-12-13 17:04:07,420 INFO    SystemMonitor:83907 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-12-13 17:04:07,420 INFO    HandlerThread:83907 [system_monitor.py:probe():214] Collecting system info
+2023-12-13 17:04:07,422 INFO    SystemMonitor:83907 [interfaces.py:start():190] Started cpu monitoring
+2023-12-13 17:04:07,423 INFO    SystemMonitor:83907 [interfaces.py:start():190] Started disk monitoring
+2023-12-13 17:04:07,432 DEBUG   HandlerThread:83907 [system_info.py:probe():196] Probing system
+2023-12-13 17:04:07,452 INFO    SystemMonitor:83907 [interfaces.py:start():190] Started memory monitoring
+2023-12-13 17:04:07,455 INFO    SystemMonitor:83907 [interfaces.py:start():190] Started network monitoring
+2023-12-13 17:04:07,482 DEBUG   HandlerThread:83907 [system_info.py:_probe_git():181] Probing git
+2023-12-13 17:04:07,510 DEBUG   HandlerThread:83907 [system_info.py:_probe_git():189] Probing git done
+2023-12-13 17:04:07,511 DEBUG   HandlerThread:83907 [system_info.py:probe():244] Probing system done
+2023-12-13 17:04:07,511 DEBUG   HandlerThread:83907 [system_monitor.py:probe():223] {'os': 'macOS-13.3-x86_64-i386-64bit', 'python': '3.8.18', 'heartbeatAt': '2023-12-13T16:04:07.446432', 'startedAt': '2023-12-13T16:04:06.726091', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/hugodmn/conditionned_theatre_play_generation.git', 'commit': None}, 'email': 'hugo.daumain@edu.devinci.fr', 'root': '/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation', 'host': 'MacBook-Pro-9.local', 'username': 'hugo', 'executable': '/Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/.env/bin/python', 'cpu_count': 12, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2400, 'min': 2400, 'max': 2400}, 'cpu_freq_per_core': [{'current': 2400, 'min': 2400, 'max': 2400}], 'disk': {'/': {'total': 926.3517189025879, 'used': 8.455924987792969}}, 'memory': {'total': 32.0}}
+2023-12-13 17:04:07,511 INFO    HandlerThread:83907 [system_monitor.py:probe():224] Finished collecting system info
+2023-12-13 17:04:07,511 INFO    HandlerThread:83907 [system_monitor.py:probe():227] Publishing system info
+2023-12-13 17:04:07,511 DEBUG   HandlerThread:83907 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-12-13 17:04:07,511 DEBUG   HandlerThread:83907 [system_info.py:_save_pip():68] Saving pip packages done
+2023-12-13 17:04:07,512 INFO    HandlerThread:83907 [system_monitor.py:probe():229] Finished publishing system info
+2023-12-13 17:04:07,514 DEBUG   SenderThread:83907 [sender.py:send():382] send: files
+2023-12-13 17:04:07,514 INFO    SenderThread:83907 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2023-12-13 17:04:07,518 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-13 17:04:07,518 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: stop_status
+2023-12-13 17:04:07,519 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-13 17:04:07,711 DEBUG   SenderThread:83907 [sender.py:send():382] send: telemetry
+2023-12-13 17:04:08,240 INFO    Thread-12 :83907 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/files/requirements.txt
+2023-12-13 17:04:08,240 INFO    Thread-12 :83907 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/files/wandb-metadata.json
+2023-12-13 17:04:08,240 INFO    Thread-12 :83907 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/files/output.log
+2023-12-13 17:04:08,308 INFO    wandb-upload_0:83907 [upload_job.py:push():131] Uploaded file /var/folders/3t/6vk3vg696px0cpvl0hqnmnc40000gn/T/tmpx8ubxtgzwandb/tubsxb42-wandb-metadata.json
+2023-12-13 17:04:09,802 DEBUG   SenderThread:83907 [sender.py:send():382] send: exit
+2023-12-13 17:04:09,803 INFO    SenderThread:83907 [sender.py:send_exit():589] handling exit code: 1
+2023-12-13 17:04:09,803 INFO    SenderThread:83907 [sender.py:send_exit():591] handling runtime: 2
+2023-12-13 17:04:09,803 INFO    SenderThread:83907 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-13 17:04:09,803 INFO    SenderThread:83907 [sender.py:send_exit():597] send defer
+2023-12-13 17:04:09,803 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 17:04:09,804 INFO    HandlerThread:83907 [handler.py:handle_request_defer():172] handle defer: 0
+2023-12-13 17:04:09,804 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: defer
+2023-12-13 17:04:09,804 INFO    SenderThread:83907 [sender.py:send_request_defer():613] handle sender defer: 0
+2023-12-13 17:04:09,804 INFO    SenderThread:83907 [sender.py:transition_state():617] send defer: 1
+2023-12-13 17:04:09,804 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 17:04:09,804 INFO    HandlerThread:83907 [handler.py:handle_request_defer():172] handle defer: 1
+2023-12-13 17:04:09,804 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: defer
+2023-12-13 17:04:09,804 INFO    SenderThread:83907 [sender.py:send_request_defer():613] handle sender defer: 1
+2023-12-13 17:04:09,804 INFO    SenderThread:83907 [sender.py:transition_state():617] send defer: 2
+2023-12-13 17:04:09,804 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 17:04:09,804 INFO    HandlerThread:83907 [handler.py:handle_request_defer():172] handle defer: 2
+2023-12-13 17:04:09,804 INFO    HandlerThread:83907 [system_monitor.py:finish():203] Stopping system monitor
+2023-12-13 17:04:09,804 DEBUG   SystemMonitor:83907 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-12-13 17:04:09,804 INFO    HandlerThread:83907 [interfaces.py:finish():202] Joined cpu monitor
+2023-12-13 17:04:09,804 DEBUG   SystemMonitor:83907 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-12-13 17:04:09,805 INFO    HandlerThread:83907 [interfaces.py:finish():202] Joined disk monitor
+2023-12-13 17:04:09,805 DEBUG   SystemMonitor:83907 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-12-13 17:04:09,805 INFO    HandlerThread:83907 [interfaces.py:finish():202] Joined memory monitor
+2023-12-13 17:04:09,805 INFO    HandlerThread:83907 [interfaces.py:finish():202] Joined network monitor
+2023-12-13 17:04:09,805 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: defer
+2023-12-13 17:04:09,805 INFO    SenderThread:83907 [sender.py:send_request_defer():613] handle sender defer: 2
+2023-12-13 17:04:09,805 INFO    SenderThread:83907 [sender.py:transition_state():617] send defer: 3
+2023-12-13 17:04:09,805 DEBUG   SenderThread:83907 [sender.py:send():382] send: stats
+2023-12-13 17:04:09,806 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 17:04:09,806 INFO    HandlerThread:83907 [handler.py:handle_request_defer():172] handle defer: 3
+2023-12-13 17:04:09,806 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: defer
+2023-12-13 17:04:09,806 INFO    SenderThread:83907 [sender.py:send_request_defer():613] handle sender defer: 3
+2023-12-13 17:04:09,806 INFO    SenderThread:83907 [sender.py:transition_state():617] send defer: 4
+2023-12-13 17:04:09,806 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 17:04:09,806 INFO    HandlerThread:83907 [handler.py:handle_request_defer():172] handle defer: 4
+2023-12-13 17:04:09,806 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: defer
+2023-12-13 17:04:09,806 INFO    SenderThread:83907 [sender.py:send_request_defer():613] handle sender defer: 4
+2023-12-13 17:04:09,806 INFO    SenderThread:83907 [sender.py:transition_state():617] send defer: 5
+2023-12-13 17:04:09,806 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 17:04:09,806 INFO    HandlerThread:83907 [handler.py:handle_request_defer():172] handle defer: 5
+2023-12-13 17:04:09,806 DEBUG   SenderThread:83907 [sender.py:send():382] send: summary
+2023-12-13 17:04:09,806 INFO    SenderThread:83907 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-13 17:04:09,807 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: defer
+2023-12-13 17:04:09,807 INFO    SenderThread:83907 [sender.py:send_request_defer():613] handle sender defer: 5
+2023-12-13 17:04:09,807 INFO    SenderThread:83907 [sender.py:transition_state():617] send defer: 6
+2023-12-13 17:04:09,807 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 17:04:09,807 INFO    HandlerThread:83907 [handler.py:handle_request_defer():172] handle defer: 6
+2023-12-13 17:04:09,807 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: defer
+2023-12-13 17:04:09,807 INFO    SenderThread:83907 [sender.py:send_request_defer():613] handle sender defer: 6
+2023-12-13 17:04:09,811 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: status_report
+2023-12-13 17:04:09,998 INFO    SenderThread:83907 [sender.py:transition_state():617] send defer: 7
+2023-12-13 17:04:09,999 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 17:04:09,999 INFO    HandlerThread:83907 [handler.py:handle_request_defer():172] handle defer: 7
+2023-12-13 17:04:09,999 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: defer
+2023-12-13 17:04:10,000 INFO    SenderThread:83907 [sender.py:send_request_defer():613] handle sender defer: 7
+2023-12-13 17:04:10,248 INFO    Thread-12 :83907 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/files/config.yaml
+2023-12-13 17:04:10,249 INFO    Thread-12 :83907 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/files/output.log
+2023-12-13 17:04:10,250 INFO    Thread-12 :83907 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/files/wandb-summary.json
+2023-12-13 17:04:10,809 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-13 17:04:11,895 INFO    SenderThread:83907 [sender.py:transition_state():617] send defer: 8
+2023-12-13 17:04:11,895 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: poll_exit
+2023-12-13 17:04:11,895 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 17:04:11,897 INFO    HandlerThread:83907 [handler.py:handle_request_defer():172] handle defer: 8
+2023-12-13 17:04:11,898 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: defer
+2023-12-13 17:04:11,898 INFO    SenderThread:83907 [sender.py:send_request_defer():613] handle sender defer: 8
+2023-12-13 17:04:11,898 INFO    SenderThread:83907 [job_builder.py:build():298] Attempting to build job artifact
+2023-12-13 17:04:11,899 INFO    SenderThread:83907 [job_builder.py:_get_source_type():439] no source found
+2023-12-13 17:04:11,900 INFO    SenderThread:83907 [sender.py:transition_state():617] send defer: 9
+2023-12-13 17:04:11,900 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 17:04:11,900 INFO    HandlerThread:83907 [handler.py:handle_request_defer():172] handle defer: 9
+2023-12-13 17:04:11,900 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: defer
+2023-12-13 17:04:11,900 INFO    SenderThread:83907 [sender.py:send_request_defer():613] handle sender defer: 9
+2023-12-13 17:04:11,900 INFO    SenderThread:83907 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-12-13 17:04:12,252 INFO    Thread-12 :83907 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/files/output.log
+2023-12-13 17:04:12,254 INFO    SenderThread:83907 [dir_watcher.py:finish():388] scan: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/files
+2023-12-13 17:04:12,254 INFO    SenderThread:83907 [dir_watcher.py:finish():402] scan save: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/files/requirements.txt requirements.txt
+2023-12-13 17:04:12,255 INFO    SenderThread:83907 [dir_watcher.py:finish():402] scan save: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/files/output.log output.log
+2023-12-13 17:04:12,259 INFO    SenderThread:83907 [dir_watcher.py:finish():402] scan save: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/files/config.yaml config.yaml
+2023-12-13 17:04:12,263 INFO    SenderThread:83907 [dir_watcher.py:finish():402] scan save: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/files/wandb-summary.json wandb-summary.json
+2023-12-13 17:04:12,267 INFO    SenderThread:83907 [dir_watcher.py:finish():402] scan save: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/files/wandb-metadata.json wandb-metadata.json
+2023-12-13 17:04:12,268 INFO    SenderThread:83907 [sender.py:transition_state():617] send defer: 10
+2023-12-13 17:04:12,272 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 17:04:12,278 INFO    HandlerThread:83907 [handler.py:handle_request_defer():172] handle defer: 10
+2023-12-13 17:04:12,279 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: defer
+2023-12-13 17:04:12,279 INFO    SenderThread:83907 [sender.py:send_request_defer():613] handle sender defer: 10
+2023-12-13 17:04:12,281 INFO    SenderThread:83907 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-13 17:04:12,653 INFO    wandb-upload_1:83907 [upload_job.py:push():131] Uploaded file /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/files/output.log
+2023-12-13 17:04:12,717 INFO    wandb-upload_0:83907 [upload_job.py:push():131] Uploaded file /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/files/requirements.txt
+2023-12-13 17:04:12,775 INFO    wandb-upload_3:83907 [upload_job.py:push():131] Uploaded file /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/files/wandb-summary.json
+2023-12-13 17:04:12,819 INFO    wandb-upload_2:83907 [upload_job.py:push():131] Uploaded file /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/files/config.yaml
+2023-12-13 17:04:13,023 INFO    Thread-11 :83907 [sender.py:transition_state():617] send defer: 11
+2023-12-13 17:04:13,024 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 17:04:13,025 INFO    HandlerThread:83907 [handler.py:handle_request_defer():172] handle defer: 11
+2023-12-13 17:04:13,025 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: defer
+2023-12-13 17:04:13,025 INFO    SenderThread:83907 [sender.py:send_request_defer():613] handle sender defer: 11
+2023-12-13 17:04:13,025 INFO    SenderThread:83907 [file_pusher.py:join():181] waiting for file pusher
+2023-12-13 17:04:13,026 INFO    SenderThread:83907 [sender.py:transition_state():617] send defer: 12
+2023-12-13 17:04:13,026 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 17:04:13,026 INFO    HandlerThread:83907 [handler.py:handle_request_defer():172] handle defer: 12
+2023-12-13 17:04:13,026 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: defer
+2023-12-13 17:04:13,026 INFO    SenderThread:83907 [sender.py:send_request_defer():613] handle sender defer: 12
+2023-12-13 17:04:13,026 INFO    SenderThread:83907 [file_stream.py:finish():595] file stream finish called
+2023-12-13 17:04:13,278 INFO    SenderThread:83907 [file_stream.py:finish():599] file stream finish is done
+2023-12-13 17:04:13,279 INFO    SenderThread:83907 [sender.py:transition_state():617] send defer: 13
+2023-12-13 17:04:13,279 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 17:04:13,279 INFO    HandlerThread:83907 [handler.py:handle_request_defer():172] handle defer: 13
+2023-12-13 17:04:13,280 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: defer
+2023-12-13 17:04:13,280 INFO    SenderThread:83907 [sender.py:send_request_defer():613] handle sender defer: 13
+2023-12-13 17:04:13,280 INFO    SenderThread:83907 [sender.py:transition_state():617] send defer: 14
+2023-12-13 17:04:13,280 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: defer
+2023-12-13 17:04:13,280 DEBUG   SenderThread:83907 [sender.py:send():382] send: final
+2023-12-13 17:04:13,280 INFO    HandlerThread:83907 [handler.py:handle_request_defer():172] handle defer: 14
+2023-12-13 17:04:13,281 DEBUG   SenderThread:83907 [sender.py:send():382] send: footer
+2023-12-13 17:04:13,281 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: defer
+2023-12-13 17:04:13,281 INFO    SenderThread:83907 [sender.py:send_request_defer():613] handle sender defer: 14
+2023-12-13 17:04:13,282 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-13 17:04:13,282 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: poll_exit
+2023-12-13 17:04:13,282 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: server_info
+2023-12-13 17:04:13,283 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: get_summary
+2023-12-13 17:04:13,283 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: sampled_history
+2023-12-13 17:04:13,284 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-13 17:04:13,284 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: server_info
+2023-12-13 17:04:13,287 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: job_info
+2023-12-13 17:04:13,474 DEBUG   SenderThread:83907 [sender.py:send_request():409] send_request: job_info
+2023-12-13 17:04:13,475 INFO    MainThread:83907 [wandb_run.py:_footer_history_summary_info():3837] rendering history
+2023-12-13 17:04:13,475 INFO    MainThread:83907 [wandb_run.py:_footer_history_summary_info():3869] rendering summary
+2023-12-13 17:04:13,475 INFO    MainThread:83907 [wandb_run.py:_footer_sync_info():3796] logging synced files
+2023-12-13 17:04:13,477 DEBUG   HandlerThread:83907 [handler.py:handle_request():146] handle_request: shutdown
+2023-12-13 17:04:13,477 INFO    HandlerThread:83907 [handler.py:finish():866] shutting down handler
+2023-12-13 17:04:14,293 INFO    WriterThread:83907 [datastore.py:close():294] close: /Users/hugo/Desktop/Projects/conditionned_theatre_play_generation/wandb/run-20231213_170406-iuebpl8a/run-iuebpl8a.wandb
+2023-12-13 17:04:14,477 INFO    SenderThread:83907 [sender.py:finish():1548] shutting down sender
+2023-12-13 17:04:14,477 INFO    SenderThread:83907 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-13 17:04:14,477 INFO    SenderThread:83907 [file_pusher.py:join():181] waiting for file pusher

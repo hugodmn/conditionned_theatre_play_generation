@@ -1,0 +1,48 @@
+wandb_version: 1
+
+device:
+  desc: null
+  value: mps
+learning_rate:
+  desc: null
+  value: 0.0001
+head_nb:
+  desc: null
+  value: 6
+block_nb:
+  desc: null
+  value: 6
+emb_size:
+  desc: null
+  value: 384
+block_size:
+  desc: null
+  value: 512
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.18
+    cli_version: 0.16.1
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1702472825.397374
+    t:
+      1:
+      - 1
+      - 49
+      - 51
+      - 55
+      2:
+      - 1
+      - 49
+      - 51
+      - 55
+      3:
+      - 16
+      - 23
+      4: 3.8.18
+      5: 0.16.1
+      8:
+      - 5
+      13: darwin-x86_64
