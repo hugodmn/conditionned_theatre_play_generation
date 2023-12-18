@@ -169,4 +169,4 @@ generateBtn.addEventListener('click', () => {
     displayGeneratedText();
 });
 
-//initModel();
+initModel();
