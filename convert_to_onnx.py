@@ -13,11 +13,11 @@ def loading_model(model, weights_path):
    
         #Load json file in a dict
         config = Config(
-        vocab_size = 53,
+        vocab_size = 1070,
         emb_size = 384,
         head_nb = 6,
         block_nb = 6,
-        block_size = 512,
+        block_size = 256,
         dropout=0.0,
         )
 
@@ -44,7 +44,7 @@ def saving_onnx(torch_model, saved_name, quantization = False, export = True):
 
 
     #torch_in = torch.randn( 1, torch_model.config.block_size, requires_grad=True, dtype=torch.int32)
-    torch_in = torch.randint(0, 53, (1, 512), dtype=torch.int32)
+    torch_in = torch.randint(0, 1070, (1, 256), dtype=torch.int32)
     print(torch_in)
     print(torch_in.shape)
     torch_out = torch_model(torch_in)
@@ -93,6 +93,6 @@ if __name__ == "__main__":
     weights_file_name = "char_level"
     quantization = True
 
-    model_inf = loading_model(LLM,'checkpoints_ft/model_with_maj.pt' )
-    torch_in, torch_out = saving_onnx(model_inf, 'ONNX_saved/exported_model', quantization, export = True)
-    onnx_test(onnx_path='ONNX_saved/exported_model.onnx',torch_in = torch_in, torch_out = torch_out)
+    model_inf = loading_model(LLM,'checkpoints/finetuned/bpe/model.pt' )
+    torch_in, torch_out = saving_onnx(model_inf, 'ONNX_saved/bpe/exported_model', quantization, export = True)
+    onnx_test(onnx_path='ONNX_saved/bpe/exported_model.onnx',torch_in = torch_in, torch_out = torch_out)

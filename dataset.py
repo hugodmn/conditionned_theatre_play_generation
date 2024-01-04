@@ -8,11 +8,279 @@ from torch.utils.data import Dataset, DataLoader, Subset
 import numpy as np
 from tqdm import tqdm
 import random
+from tokenizer import BPE 
+import pickle
+import ast
+
+allowed_chars = set("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.,;:-!?()' <>")
+
+def replace_chars( input_string, allowed_chars, replacement_char):
+    """
+    Replace characters in input_string that are not in allowed_chars with replacement_char.
+
+    Parameters:
+    input_string (str): The string to process.
+    allowed_chars (set): A set of characters that are allowed to remain unchanged.
+    replacement_char (str): The character to replace disallowed characters with.
+
+    Returns:
+    str: The modified string.
+    """
+    return ''.join([c if c in allowed_chars else replacement_char for c in input_string])
+
+class Longform_BPE(Dataset):
+    def __init__(self,ctx_len : int = 256, split_str : str = "train", dataset_alreday_tokenized = True):
 
 
-class DialogueDataset(Dataset):
-    def __init__(self, dataset_path : str, split_str : str, ctx_len : int = 512, saving = False):
+        self.tokenizer = BPE('dataset/dialogue_dataset', training_bool = False)
+        self.itos = self.tokenizer.itos
+        self.stoi = self.tokenizer.stoi
+        self.vocab_size = len(self.stoi)
 
+        self.ctx_len = ctx_len
+
+        self.tokenized_text = []
+        if not dataset_alreday_tokenized : 
+
+            for split in ['train', 'validation', 'test'] :
+                text = ""
+                dataset = load_dataset("akoksal/LongForm")[split]
+
+                if split == 'train':
+                    dataset = dataset[:10000]
+                if split == 'test' : 
+                    dataset = dataset[:500]
+                if split == 'validation':
+                    dataset = dataset[:1000]
+
+                with tqdm(total = len(dataset['input']), desc = f'Loading Longform {split} split') as pbar :
+                        for sample_idx in range(len(dataset['input'])) :
+                            line = dataset['output'][sample_idx].replace(" ’ ", "'").replace('—','-').replace('#','').replace('、','').replace('¥', '$').replace('£', '$').replace('°','').replace('\\','').replace('“','"').replace('”', '"').replace('‘', "'").replace('~','').replace('’',"'").replace('′', "'").replace('。', '').replace('_','').replace('@','').replace('–','-').replace('\n', ' ')
+                            line = replace_chars(input_string=line, allowed_chars=allowed_chars, replacement_char='')
+                            text += self.tokenizer.begin_token + line
+                            pbar.update(1)
+                text = self.tokenizer.tokenize(text, pbar_bool=True)
+                with open(f"dataset/longform_{split}", "wb") as f:
+                    pickle.dump(text, f)
+          
+        else  :
+            with open(f"dataset/longform_{split_str}", "rb") as f:
+                self.tokenized_text = pickle.load(f)
+            
+            print('Dataset loaded.')
+      
+        # if split_str == 'train' :
+        #     self.tokenized_text = self.tokenized_text[:int(self.__len__()*rate_to_keep)]
+        # elif split_str == "test":
+        #     self.tokenized_text = self.tokenized_text[int(self.__len__()*rate_to_keep):]
+    
+    def __len__(self):
+        return len(self.tokenized_text) - self.ctx_len - 1
+
+    def __getitem__(self, idx):
+        if isinstance(idx, torch.Tensor):
+            idx = idx.item()  # Convert tensor to integer
+        input_seq = self.encode(self.tokenized_text[idx:idx + self.ctx_len])
+        target_seq = self.encode(self.tokenized_text[idx + 1:idx + 1 + self.ctx_len])
+
+        return torch.tensor(input_seq), torch.tensor(target_seq)
+    
+    def encode(self, text):
+        return self.tokenizer.encode(text)
+    
+    def decode(self, ids):
+        return self.tokenizer.decode(ids)
+
+class OpenWebText_BPE(Dataset):
+    def __init__(self,ctx_len : int = 256, split_str : str = "train", rate_to_keep : float = 0.9, dataset_alreday_tokenized = True):
+
+
+        self.tokenizer = BPE('dataset/dialogue_dataset', training_bool = False)
+        self.itos = self.tokenizer.itos
+        self.stoi = self.tokenizer.stoi
+        self.vocab_size = len(self.stoi)
+
+        self.processor = OWTProcessData(ctx_len)
+        self.ctx_len = ctx_len
+
+        self.tokenized_text = []
+        if not dataset_alreday_tokenized : 
+            not_processed_dataset = load_dataset("stas/openwebtext-10k")['train']['text']
+
+            with tqdm(total=len(not_processed_dataset), desc = "Tokenizing the openwebtext dataset") as pbar : 
+                with open('dataset/openwebtext_tokenized.txt', 'w') as f:
+                    for text in not_processed_dataset : 
+                        self.tokenized_text = self.tokenizer.tokenize(self.tokenizer.begin_token+text)
+                        f.write(str(self.tokenized_text)+'\n')
+                        pbar.update(1)
+        else  :
+            print('Loading dataset...')
+            with open('dataset/openwebtext_tokenized.txt', 'r') as openwebtext_tokenized:
+                lines = openwebtext_tokenized.readlines()
+                if split_str == 'train' :
+                  with tqdm(total=len(lines[:int(len(lines)*rate_to_keep)]), desc = f"Loading {split_str} split") as pbar :
+                    for line in lines[:int(len(lines)*rate_to_keep)] : 
+                    #line = json.loads(line)
+                        line = ast.literal_eval(line)
+                
+                        self.tokenized_text = self.tokenized_text + line
+                        pbar.update(1)
+
+                elif split_str == "test":
+                    with tqdm(total=len(lines[int(len(lines)*rate_to_keep):]), desc = f"Loading {split_str} split") as pbar :
+                        for line in lines[int(len(lines)*rate_to_keep):] : 
+                        #line = json.loads(line)
+                            line = ast.literal_eval(line)
+                    
+                            self.tokenized_text = self.tokenized_text + line
+                            pbar.update(1)
+            print('Dataset loaded.')
+      
+        # if split_str == 'train' :
+        #     self.tokenized_text = self.tokenized_text[:int(self.__len__()*rate_to_keep)]
+        # elif split_str == "test":
+        #     self.tokenized_text = self.tokenized_text[int(self.__len__()*rate_to_keep):]
+    
+    def __len__(self):
+        return len(self.tokenized_text) - self.ctx_len - 1
+
+    def __getitem__(self, idx):
+        if isinstance(idx, torch.Tensor):
+            idx = idx.item()  # Convert tensor to integer
+        input_seq = self.encode(self.tokenized_text[idx:idx + self.ctx_len])
+        target_seq = self.encode(self.tokenized_text[idx + 1:idx + 1 + self.ctx_len])
+
+        return torch.tensor(input_seq), torch.tensor(target_seq)
+    
+    def encode(self, text):
+        return self.tokenizer.encode(text)
+    
+    def decode(self, ids):
+        return self.tokenizer.decode(ids)
+
+class DialogueDataset_BPE(Dataset):
+    def __init__(self, split_str : str = 'train', ctx_len : int = 256, already_tokenized = True):
+        self.tokenizer = BPE('dataset/dialogue_dataset', training_bool = False)
+        self.itos = self.tokenizer.itos
+        self.stoi = self.tokenizer.stoi 
+        self.vocab_size = len(self.stoi)
+        if not already_tokenized :
+            train_corpus = ""
+            test_corpus = ""
+            validation_corpus = ""
+            for split in ['train', 'test', 'validation']:
+
+                with tqdm(total = len(os.listdir('dataset/dialogue_dataset/'+split)), desc = f'loading {split} split') as pbar : 
+                    for idx, file in enumerate(os.listdir('dataset/dialogue_dataset/'+split)):
+                    
+                        if file.endswith('.txt'):
+                            with open('dataset/dialogue_dataset/'+split+'/'+file, 'r') as f:
+                                lines = f.readlines()
+                                line = lines[0]
+                                line = line.strip()
+                                line = line.replace(" ’ ", "'").replace('—','-').replace('#','').replace('、','').replace('¥', '$').replace('£', '$').replace('°','').replace('\\','').replace('“','"').replace('”', '"').replace('‘', "'").replace('~','').replace('’',"'").replace('′', "'").replace('。', '').replace('_','').replace('@','').replace('–','-').replace('\n', ' ')
+                                line = line.replace('<spkchg>', ' <spkchg> ')
+                                line = replace_chars(input_string=line, allowed_chars=allowed_chars, replacement_char='')
+
+                                if split == 'train':
+                                    train_corpus = train_corpus + line
+                                elif split == 'test':
+                                    test_corpus = test_corpus + line
+                                elif split == 'validation':
+                                    validation_corpus = validation_corpus + line
+                        pbar.update(1)
+            
+            tokenized_trainset = self.tokenizer.tokenize(train_corpus)
+            tokenized_validset = self.tokenizer.tokenize(validation_corpus)
+            tokenized_testset = self.tokenizer.tokenize(test_corpus)
+
+            for split in ['tokenized_trainset', 'tokenized_validset', 'tokenized_testset']:
+
+                
+                    if split == 'tokenized_trainset':
+                        with open(f'dataset/{split}_dialogue_dataset', 'wb') as f:
+                            pickle.dump(tokenized_trainset, f)
+                    elif split == 'tokenized_validset':
+                        with open(f'dataset/{split}_dialogue_dataset', 'wb') as f:
+                            pickle.dump(tokenized_validset, f)
+                    elif split == 'tokenized_testset':
+                        with open(f'dataset/{split}_dialogue_dataset', 'wb') as f:
+                            pickle.dump(tokenized_testset, f)
+          
+            print("TOKENIZED DATASET IS SAVED !")
+
+        else : 
+
+            with open(f'dataset/{split_str}_dialogue_dataset', 'rb') as f:
+                self.dataset = pickle.load(f)
+
+
+
+        self.ctx_len = ctx_len
+
+    def __len__(self):
+        return len(self.dataset) - self.ctx_len - 1
+    
+    def __getitem__(self, idx):
+        if isinstance(idx, torch.Tensor):
+            idx = idx.item()  # Convert tensor to integer
+        input_seq = self.encode(self.dataset[idx:idx + self.ctx_len])
+        target_seq = self.encode(self.dataset[idx + 1:idx + 1 + self.ctx_len])
+
+        return torch.tensor(input_seq), torch.tensor(target_seq)
+    
+    def encode(self, text):
+        return self.tokenizer.encode(text)
+    
+    def decode(self, ids):
+        return self.tokenizer.decode(ids)
+    
+
+    def process_dataset(self, saving = True):
+
+        self.train_df = pd.DataFrame(columns = ['path', 'sample_nb'])
+        self.val_df = pd.DataFrame(columns = ['path', 'sample_nb'])
+        self.test_df = pd.DataFrame(columns = ['path', 'sample_nb'])
+        for split in ['train', 'test' , 'validation']:
+            
+            
+                with open('dataset/'+self.dataset_path+'/'+split+'/dialogues_'+split+'.txt', 'r') as dialogues_f:
+                    # if split == 'train':
+                    #     dialogues_lines = dialogues_f.readlines()[:4000]
+                    # if split == 'test':
+                    #     dialogues_lines = dialogues_f.readlines()[
+                    dialogues_lines = dialogues_f.readlines()
+
+
+                    with tqdm(total=len(dialogues_lines), desc=f"Creating samples for {split} split") as pbar:
+                        for idx in range(len(dialogues_lines)) :
+                            dialogue = ""
+                            dialogue_line = dialogues_lines[idx].split('__eou__')[:-1]
+                            #repartition_line = [int(char) for char in repartition_lines[idx] if char != '\n' and char != ' ']
+                            dialogue += '<begin>'
+                     
+                            for sentence_idx in range(len(dialogue_line)) :
+                                if sentence_idx != 0 :
+                                    dialogue += '<spk_chg>'
+                                dialogue += dialogue_line[sentence_idx][:-1].strip()
+                            if len(self.tokenizer.tokenize(dialogue)) > self.ctx_len+50 :
+                                with open('dataset/dialogue_dataset/'+split+'/dialogues_'+split+'_'+str(idx)+'.txt', 'w') as f:
+                                    f.write(dialogue)
+
+                            pbar.update(1)   
+
+
+        
+
+
+
+
+
+
+
+class DialogueDataset_char(Dataset):
+    def __init__(self, dataset_path : str, split_str : str, ctx_len : int = 256, saving = False):
+        self.tokenizer = BPE('dataset/dialogue_dataset', training_bool = False)
         self.dataset_path = dataset_path
         self.ctx_len = ctx_len
         self.vocab_chars = set(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j','k','l','m','n','o','p','q','r','s','t','u','v','w','x', 'y', 'z', ' ', '!', '"', "'", '(', ')', ',', '-', '.', ':', ';', '?', '[', '\n', ']', '{', '}', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'])
@@ -23,17 +291,6 @@ class DialogueDataset(Dataset):
         #self.generate_csv_sample_mapping()
         compt = 0
         self.dataset = pd.DataFrame(columns = ['id','file', 'dialogue'])
-        for idx, file in enumerate(os.listdir('dialogue_dataset/'+str(split_str))):
-           
-                if file.endswith('.txt'):
-                    with open('dialogue_dataset/'+str(split_str)+'/'+file, 'r') as f:
-                        lines = f.readlines()
-                        corpus = ''.join(lines).lower().replace('’', "'").replace('%','').replace('$','').replace('@','').replace('”','"').replace('“','"').replace('/','').replace('&','').replace('。','').replace('+','').replace('—','-').replace('‘',"'").replace('、','').replace('*','').replace('–','-').replace('£','').replace('…','...').replace('é','e').replace('è','e').replace('ê','e').replace('à','a').replace('â','a').replace('î','i').replace('ï','i').replace('ô','o').replace('û','u').replace('ù','u').replace('ç','c').replace('œ','oe').replace('æ','ae').replace('=','').replace('\\','').replace('~','').replace('#','').replace('°','').replace('¥','').replace('′',"'").replace('_','')
-                        if len(self.encode(corpus)) > self.ctx_len :
-                            self.dataset.at[compt, 'id'] = idx
-                            self.dataset.at[compt, 'file'] = file
-                            self.dataset.at[compt, 'dialogue'] = self.encode(corpus)
-                            compt += 1
 
     def __len__(self):
         return len(self.dataset)
@@ -65,7 +322,7 @@ class DialogueDataset(Dataset):
         for split in ['train', 'test' , 'validation']:
             
             
-                with open(self.dataset_path+'/'+split+'/dialogues_'+split+'.txt', 'r') as dialogues_f:
+                with open('dataset/'+self.dataset_path+'/'+split+'/dialogues_'+split+'.txt', 'r') as dialogues_f:
                     # if split == 'train':
                     #     dialogues_lines = dialogues_f.readlines()[:4000]
                     # if split == 'test':
@@ -78,18 +335,14 @@ class DialogueDataset(Dataset):
                             dialogue = ""
                             dialogue_line = dialogues_lines[idx].split('__eou__')[:-1]
                             #repartition_line = [int(char) for char in repartition_lines[idx] if char != '\n' and char != ' ']
-                            dialogue += 'BEGINING\n'
-                            char = 1
+                            dialogue += '<begin>'
+                     
                             for sentence_idx in range(len(dialogue_line)) :
-                                
-                                dialogue += '{'+str(char)+'} : '
-                                if char == 1 :
-                                    char = 2
-                                else : 
-                                    char = 1
-                                dialogue += dialogue_line[sentence_idx][:-1] + '\n'
-                            if len(dialogue) > self.ctx_len+50 :
-                                with open('dialogue_dataset/'+split+'/dialogues_'+split+'_'+str(idx)+'.txt', 'w') as f:
+                                if sentence_idx != 0 :
+                                    dialogue += '<spk_chg>'
+                                dialogue += dialogue_line[sentence_idx][:-1].strip()
+                            if len(self.tokenizer.tokenize(dialogue)) > self.ctx_len+50 :
+                                with open('dataset/dialogue_dataset/'+split+'/dialogues_'+split+'_'+str(idx)+'.txt', 'w') as f:
                                     f.write(dialogue)
 
                             pbar.update(1)   
@@ -434,79 +687,13 @@ class OWTProcessData():
         return samples
 
        
+class OpenWebText_char(Dataset):
+    def __init__(self, ):
+        pass
 
 
-class OpenWebText(Dataset):
-    def __init__(self, rate_to_keep : float,ctx_len : int, split_str : str ):
-
-        self.vocab_chars = set(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j','k','l','m','n','o','p','q','r','s','t','u','v','w','x', 'y', 'z', ' ', '!', '"', "'", '(', ')', ',', '-', '.', ':', ';', '?', '[', '\n', ']', '{', '}', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'])
-        self.vocab_size = len(sorted(self.vocab_chars))
-        self.stoi = {char: i for i, char in enumerate(sorted(self.vocab_chars))}
-        self.itos = {i: char for i, char in enumerate(sorted(self.vocab_chars))}
-    
-        self.processor = OWTProcessData(ctx_len)
-        self.ctx_len = ctx_len
-
-        dataset = load_dataset("openwebtext", num_proc=3)
-        dataset = dataset['train'].train_test_split(test_size=1-rate_to_keep, shuffle=False)
-        dataset.pop('test')
-        split_dataset = dataset["train"].train_test_split(test_size=0.05, seed=2357, shuffle=False)
-        split_dataset['val'] = split_dataset.pop('test') # rename the test split to val
-
-        if split_str == 'train':
-            self.data = split_dataset['train']
-        elif split_str == 'val':
-            self.data = split_dataset['val']
-        
-       
-        tokenized = self.data.map(
-            self.process,
-            remove_columns=['text'],
-            desc="tokenizing the splits",
-            num_proc=8,
-        )
-        self.data = self.processor.remove_small_corpus(tokenized)
-        
-   
-        
-        
-
-
-    def process(self, example) :
-        text = example['text']
-        text.replace('…', '...').replace('”', '"').replace('’', "'")
-        
-        
-        ids = [self.stoi[char.lower()] for char in text if char.lower() in self.stoi]
-        # note: I think eot should be prepended not appended... hmm. it's called "eot" though...
-        out = {'ids': ids, 'len': len(ids)}
-        #all_ids.append(ids)
-    #ut = {'all_ids': all_ids}
-        return out
-    
-    def __len__(self):
-        return len(self.data)
-
-    def __getitem__(self, idx):
-        if isinstance(idx, torch.Tensor):
-            idx = idx.item()  # Convert tensor to integer
-        sample = self.data[idx]
-        start_index = random.randint(0, len(sample['ids']) - self.ctx_len - 1)
-        input_seq = sample['ids'][start_index:start_index + self.ctx_len]
-        target_seq = sample['ids'][start_index + 1:start_index + 1 + self.ctx_len]
-
-        return torch.tensor(input_seq), torch.tensor(target_seq)
-
-    def decode(self, ids):
-        if isinstance(ids, torch.Tensor):
-            ids = ids.tolist()
-        return ''.join([self.itos[id] for id in ids])
-    
-    def encode(self, text):
-        return [self.stoi[char] for char in text if char in self.stoi]
-    
 
 if '__main__' == __name__:
     
-    dataset = DialogueDataset('dailydialogue_dataset', split_str = 'train')
-    print(dataset[0])
+    dataset = DialogueDataset_BPE(ctx_len=256, split_str = "train")
+

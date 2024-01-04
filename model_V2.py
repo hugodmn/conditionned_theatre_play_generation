@@ -193,13 +193,17 @@ class LLM(nn.Module):
         B,T = x.shape
         with torch.no_grad():
             for _ in range(max_len):
+                
                 x_cond = x if x.size(1) <= self.block_size else x[:, -self.block_size:]
-           
+       
                 logits = self(x_cond)
-                logits = logits[:, -1, :] / temperature
             
+                logits = logits[:, -1, :] / temperature
+
                 probs = F.softmax(logits, dim=-1)
+
                 next_tok = torch.multinomial(probs, num_samples=1)
+                
                 x = torch.cat([x, next_tok], dim=-1)
         return x
     
